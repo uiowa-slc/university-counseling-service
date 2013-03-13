@@ -1,0 +1,1 @@
+//@codekit-append "vendor/jquery.flexslider-min.js"
