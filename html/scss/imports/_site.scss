@@ -39,11 +39,28 @@ body {
 
 /* Header
 ========================================================================== */
+.header {
+	background: #fff;
+	border-bottom: 5px solid $yellow;
+	position: relative;
+}
+.logo {
+	font-family: "proxima-nova-condensed",sans-serif;
+	font-size: 41px;
+	font-weight: 600;
+	margin: 0.5em 0 .2em 0;
+	text-align: center;
+	text-transform: uppercase;
+	& a {
+		color: #222;
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
 
 
-
-/* Navigation
-========================================================================== */
 
 
 

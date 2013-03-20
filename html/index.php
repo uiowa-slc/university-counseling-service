@@ -1,7 +1,8 @@
 <?php include 'inc/doctype.php'; ?>
 <?php include 'inc/meta.php'; ?>
 <title>Home | Acme Inc.</title>
-<script src="http://use.edgefonts.net/open-sans.js"></script>
+<script type="text/javascript" src="//use.typekit.net/ivn3muh.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <link rel="stylesheet" href="css/master.css">
 <link rel="stylesheet" href="css/print.css" media="print" />
 <!--[if lt IE 9]><script src="js/vendor/html5shiv.js"></script><![endif]-->

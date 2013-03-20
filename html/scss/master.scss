@@ -1,5 +1,3 @@
-@import "bourbon";
-
 @import "imports/_global.scss";
 @import "imports/_mixins.scss";
 @import "imports/_normalize.scss";
@@ -9,21 +7,21 @@
    	Elements
 -------------------------------------------*/ 
 @import "imports/_typography.scss";
-@import "imports/_buttons.scss";
-@import "imports/_flexslider.scss";
+/*@import "imports/_buttons.scss";*/
+/*@import "imports/_flexslider.scss";*/
 /*@import "imports/_forms.scss";*/
 @import "imports/_grid.scss";
 @import "imports/_nav.scss";
-@import "imports/_tables.scss";
+/*@import "imports/_tables.scss";*/
 
 
 /*-------------------------------------------
-   	Site specific
+   	Modules
 -------------------------------------------*/ 
 @import "imports/_division-topbar.scss";
 
 
 /*-------------------------------------------
-   	Site-wide styles
+   	Site specific styles
 -------------------------------------------*/
 @import "imports/_site.scss";

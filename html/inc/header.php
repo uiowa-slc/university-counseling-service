@@ -1,14 +1,22 @@
-<header class="header" role="banner">
+<header class="header clearfix" role="banner">
 	<div class="container">
 
-		<strong class="logo"><a href="/">Logo</a></strong>
+		<h1 class="logo"><a href="/">University Counseling Service</a></h1>
 
-		<nav role="navigation">
-			<ul class="nav-main">
-				<li><a href="#">Nav 1</a></li>
-				<li><a href="#">Nav 2</a></li>
-				<li><a href="#">Nav 3</a></li>
-			</ul>
+		<nav role="navigation" class="nav-toggle nav-main-wrapper">
+			<a href="#" class="toggle-menu">
+				<span>Menu</span>
+			</a>
+			<div class="top-bar-section">
+				<ul class="nav-main clearfix">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Appointments</a></li>
+					<li><a href="#">Our Services</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Our Staff</a></li>
+					<li><a href="#">Self-Help Articles</a></li>
+				</ul>
+			</div>
 		</nav>
 
 	</div><!-- end .container -->
