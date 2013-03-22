@@ -1,3 +1,8 @@
+$break-small: 480px;
+$break-medium: 768px;
+$break-large: 980px;
+
+
 .division-topbar {
     background: #222;
     padding: 7px 0;
@@ -6,33 +11,109 @@
 }
 .uiowa, .division-studentlife {line-height: 0;}
 .uiowa {
-    float: left;
-    opacity: .6;
+    border-bottom: 1px solid #000;
+    display: block;
+    text-align: center;
+    @media screen and (min-width: $break-small) {
+        border: none;
+        float: left;
+        opacity: .6;
+    }
     &:hover {
         opacity: 1;
     }
 }
+
 .division-studentlife {
-    float: right;
-    opacity: .8;
-    text-decoration: none;
-    &:after {
-        content: '';
-        display: inline-block;
-        width: 0px;
-        height: 0px;
-        border-style: solid;
-        border-width: 6px 5px 0 5px;
-        border-color: #777777 transparent transparent transparent;
+    display: none;
+    @media screen and (min-width: $break-small) {
+        display: block;
+        float: right;
+        opacity: .8;
         text-decoration: none;
-    }
-    &:hover {
-        opacity: 1;
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 0px;
+            height: 0px;
+            border-style: solid;
+            border-width: 6px 5px 0 5px;
+            border-color: #777 transparent transparent transparent;
+            text-decoration: none;
+        }
+        &:hover {
+            opacity: 1;
+        }   
     }
 }
 .division-studentlife.active:after {
     border-width: 0 5px 6px 5px;
-    border-color: transparent transparent #777777 transparent;
+    border-color: transparent transparent #777 transparent;
+}
+
+/* Search
+========================================================================== */
+.division-search {
+    border-top: 1px solid #333;
+    padding: 10px 5px 3px;
+    @media screen and (min-width: $break-small) {
+        border: none;
+        float: right;
+        margin: 0 1em 0 0;
+        padding: 0;
+    }
+}
+.division-search form {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.division-search-input {
+    background: #444;
+    border: 1px solid #000;
+    color: #bbb;
+    display: inline-block;
+    font-size: 13px;
+    font-family: arial, verdana, sans-serif;
+    line-height: normal;
+    padding: 8px 24px 8px 8px;
+    vertical-align: middle;
+    -webkit-border-radius: 14px;
+       -moz-border-radius: 14px;
+            border-radius: 14px;
+    -webkit-box-shadow: 0 0 9px #121212 inset;
+       -moz-box-shadow: 0 0 9px #121212 inset;
+            box-shadow: 0 0 9px #121212 inset;
+    width: 100%;
+    -webkit-transition: width 0.2s ease, background-color 0.2s ease;
+    &:focus {
+        -webkit-box-shadow: none;
+           -moz-box-shadow: none;
+                box-shadow: none;
+        outline: none;
+        color: #222;
+        text-shadow: none;
+        background-color: #eee !important;
+    }
+    @media screen and (min-width: $break-small) {
+        padding: 4px 24px 4px 8px;
+        width: 120px;
+        &:focus {
+            width: 180px;
+        }
+    }
+}
+.division-search-btn {
+    background: url(../images/search.png) no-repeat 0 0;
+    text-indent: -999em;
+    border: 0;
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    margin-top: -6px;
+    position: absolute;
+    top: 50%;
+    right: 8px;
 }
 
 /* Directory
@@ -76,71 +157,3 @@
     text-transform: uppercase;
 }
 .division-directory .email {color: #ddd;}
-
-
-/* Search
-========================================================================== */
-.division-search {
-    float: right;
-    margin: 0 1em 0 0;
-    padding: 0;
-}
-.division-search-input {
-    background: #444;
-    border: 1px solid #000;
-    color: #bbb;
-    display: inline-block;
-    font-size: 13px;
-    font-family: arial, verdana, sans-serif;
-    line-height: normal;
-    padding: 4px 24px 4px 8px;
-    vertical-align: middle;
-    -webkit-border-radius: 12px;
-       -moz-border-radius: 12px;
-            border-radius: 12px;
-    -webkit-box-shadow: 0 0 9px #121212 inset;
-       -moz-box-shadow: 0 0 9px #121212 inset;
-            box-shadow: 0 0 9px #121212 inset;
-    width: 120px;
-    -webkit-transition: width 0.2s ease, background-color 0.2s ease;
-    &:focus {
-        -webkit-box-shadow: none;
-           -moz-box-shadow: none;
-                box-shadow: none;
-        outline: none;
-        width: 180px;
-        color: #222;
-        text-shadow: none;
-        background-color: #eee !important;
-    }
-}
-.division-search-btn {
-    background: url(../images/search.png) no-repeat 0 0;
-    content: '🔍';
-    text-indent: -999em;
-    border: 0;
-    padding: 0;
-    width: 12px;
-    height: 12px;
-    position: relative;
-    top: 2px;
-    right: 26px;
-    &:before {
-        content: '🔍';
-        /* '\1f50d' */
-        font-family: 'fontello';
-        font-style: normal;
-        font-weight: normal;
-        speak: none;
-        display: inline-block;
-        text-decoration: none;
-        text-align: center;
-        font-size: 22px;
-        line-height: 23px;
-        position: absolute;
-        padding-top: 5px;
-        padding-left: 5px;
-        top: 3px;
-        left: 5px;
-    }
-}

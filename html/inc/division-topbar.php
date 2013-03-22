@@ -49,10 +49,12 @@
         <a href="#" class="division-studentlife">
             <img src="images/division_studentlife.png" alt="Division of Student Life" width="224">
         </a>
-        <form class="division-search">
-            <label for="search" class="visuallyhidden">Search this site</label>
-            <input type="text" id="search" placeholder="Search..." class="division-search-input">
-            <input type="submit" value="Search" class="division-search-btn">
-        </form>
+        <div class="division-search">
+            <form>
+                <label for="search" class="visuallyhidden">Search this site</label>
+                <input type="text" id="search" placeholder="Search..." class="division-search-input">
+                <input type="submit" value="Search" class="division-search-btn">
+            </form>
+        </div>
     </div>
 </div>
