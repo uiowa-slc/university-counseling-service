@@ -42,13 +42,22 @@
                     </ul>
                 </div>
             </div>
+        </div><!-- end .division-directory -->
+
+        
+        <div class="clearfix">
+            <a href="http://www.uiowa.edu/" class="uiowa">
+                <img src="images/uiowa.png" alt="The University of Iowa" width="177">
+            </a>
+
+            <a href="#" class="search-toggle"><i class="icon-search"></i></a>
+
+            <a href="#" class="division-studentlife">
+                <img src="images/division_studentlife.png" alt="Division of Student Life" width="224">
+            </a>
         </div>
-        <a href="http://www.uiowa.edu/" class="uiowa">
-            <img src="images/uiowa.png" alt="The University of Iowa" width="177">
-        </a>
-        <a href="#" class="division-studentlife">
-            <img src="images/division_studentlife.png" alt="Division of Student Life" width="224">
-        </a>
+
+
         <div class="division-search">
             <form>
                 <label for="search" class="visuallyhidden">Search this site</label>

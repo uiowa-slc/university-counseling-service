@@ -7,7 +7,7 @@
 .nav-main {
 	display: inline-block;
 	list-style: none;
-	margin: 0 0 -12px 0;
+	margin: 0;
 	padding: 0;
 	text-align: center;
 }
@@ -19,7 +19,6 @@
 	}
 }
 .nav-main a {
-	border-bottom: 5px solid $yellow;
 	color: #333;
 	display: block;
 	font-family: "proxima-nova-condensed",sans-serif;

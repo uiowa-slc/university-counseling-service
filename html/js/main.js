@@ -21,4 +21,9 @@ $(window).load(function() {
         $('.division-directory').slideToggle();
         return false;
     });
+    $('.search-toggle').click(function() {
+        $(this).toggleClass('active');
+        $('.division-search').slideToggle();
+        return false;
+    });
 });

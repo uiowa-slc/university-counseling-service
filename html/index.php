@@ -18,7 +18,13 @@
 
             <h2>Index</h2>
 
-            <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.</p>     
+            <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.</p>
+            <ul class="the-icons unstyled">
+                <li><i class="icon-menu"></i> <span>icon-menu</span></li>
+                <li><i class="icon-twitter"></i> <span>icon-twitter</span></li>
+                <li><i class="icon-facebook"></i> <span>icon-facebook</span></li>
+                <li><i class="icon-search"></i> <span>icon-search</span></li>
+          </ul>  
 
         </section>
     </div>

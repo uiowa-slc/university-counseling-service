@@ -87,23 +87,3 @@ img.right {margin-left: 1em;margin-bottom: 1em;}
 .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}
 .visuallyhidden.focusable:active,.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto;}
 .invisible { visibility: hidden;}
-
-
-/* 480px and above
-========================================================================== */
-@media only screen and (min-width: 480px) {
-
-}
-
-/* 768px and above
-========================================================================== */
-@media only screen and (max-width: 767px) {
-    
-}
-
-/* 980px and above
-========================================================================== */
-@media only screen and (min-width: 980px) {
-
-}
-

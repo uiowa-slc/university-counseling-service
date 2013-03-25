@@ -2,18 +2,16 @@ $break-small: 480px;
 $break-medium: 768px;
 $break-large: 980px;
 
-
 .division-topbar {
     background: #222;
-    padding: 7px 0;
+    padding: 0;
     position: relative;
     z-index: 1000;
 }
 .uiowa, .division-studentlife {line-height: 0;}
 .uiowa {
-    border-bottom: 1px solid #000;
     display: block;
-    text-align: center;
+    float: left;
     @media screen and (min-width: $break-small) {
         border: none;
         float: left;
@@ -25,7 +23,7 @@ $break-large: 980px;
 }
 
 .division-studentlife {
-    display: none;
+    float: right;
     @media screen and (min-width: $break-small) {
         display: block;
         float: right;
@@ -51,13 +49,37 @@ $break-large: 980px;
     border-color: transparent transparent #777 transparent;
 }
 
+
 /* Search
 ========================================================================== */
+.search-toggle {
+    display: block;
+    float: right;
+    font-size: 0;
+}
+.search-toggle:before {
+    color: #eee;
+    content: '🔍'; /* '\1f50d' */
+    font-family: 'search';
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
 .division-search {
-    border-top: 1px solid #333;
-    padding: 10px 5px 3px;
+    display: none;
+    position: relative;
     @media screen and (min-width: $break-small) {
         border: none;
+        display: block;
         float: right;
         margin: 0 1em 0 0;
         padding: 0;
@@ -77,6 +99,7 @@ $break-large: 980px;
     font-family: arial, verdana, sans-serif;
     line-height: normal;
     padding: 8px 24px 8px 8px;
+    position: relative;
     vertical-align: middle;
     -webkit-border-radius: 14px;
        -moz-border-radius: 14px;
@@ -93,7 +116,7 @@ $break-large: 980px;
         outline: none;
         color: #222;
         text-shadow: none;
-        background-color: #eee !important;
+        background-color: #fff !important;
     }
     @media screen and (min-width: $break-small) {
         padding: 4px 24px 4px 8px;
@@ -104,16 +127,7 @@ $break-large: 980px;
     }
 }
 .division-search-btn {
-    background: url(../images/search.png) no-repeat 0 0;
-    text-indent: -999em;
-    border: 0;
-    padding: 0;
-    width: 12px;
-    height: 12px;
-    margin-top: -6px;
-    position: absolute;
-    top: 50%;
-    right: 8px;
+    display: none;
 }
 
 /* Directory
