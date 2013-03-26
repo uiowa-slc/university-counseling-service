@@ -4,6 +4,7 @@
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
 	<script src="js/plugins-ck.js"></script>
 	<script src="js/main-ck.js"></script>
+	<script src="js/division-topbar-ck.js"></script>
 
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 	<script>

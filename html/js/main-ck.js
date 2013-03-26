@@ -1,1 +1,1 @@
-$(window).load(function(){$(".division-studentlife").click(function(){$(this).toggleClass("active");$(".division-directory").slideToggle();return!1});$(".search-toggle").click(function(){$(this).toggleClass("active");$(".division-search").slideToggle();return!1})});
+$(window).load(function(){});

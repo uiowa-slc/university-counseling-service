@@ -335,10 +335,10 @@ a {
   color: #0088cc;
   outline: none;
   text-decoration: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out; }
 
 a:hover {
   text-decoration: underline; }
@@ -478,13 +478,6 @@ blockquote:after {
   font-family: 'search';
   src: url("../font/search.eot?43632120");
   src: url("../font/search.eot?43632120#iefix") format("embedded-opentype"), url("../font/search.woff?43632120") format("woff"), url("../font/search.ttf?43632120") format("truetype"), url("../font/search.svg?43632120#search") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'fontello';
-  src: url("../font/fontello.eot?952593");
-  src: url("../font/fontello.eot?952593#iefix") format("embedded-opentype"), url("../font/fontello.woff?952593") format("woff"), url("../font/fontello.ttf?952593") format("truetype"), url("../font/fontello.svg?952593#fontello") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -1001,71 +994,80 @@ blockquote:after {
 -------------------------------------------*/
 .division-topbar {
   background: #222;
-  padding: 0;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #333333 0%, #111111 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333333), color-stop(100%, #111111));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #333333 0%, #111111 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #333333 0%, #111111 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #333333 0%, #111111 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #333333 0%, #111111 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#111111',GradientType=0 );
+  /* IE6-9 */
   position: relative;
   z-index: 1000; }
 
-.uiowa, .division-studentlife {
+.uiowa, .studentlife-toggle {
   line-height: 0; }
 
 .uiowa {
   display: block;
-  float: left; }
-  @media screen and (min-width: 480px) {
-    .uiowa {
-      border: none;
-      float: left;
-      opacity: .6; } }
+  float: left;
+  padding: 8px 0 7px; }
   .uiowa:hover {
     opacity: 1; }
 
-.division-studentlife {
-  float: right; }
-  @media screen and (min-width: 480px) {
-    .division-studentlife {
-      display: block;
-      float: right;
-      opacity: .8;
-      text-decoration: none; }
-      .division-studentlife:after {
-        content: '';
-        display: inline-block;
-        width: 0px;
-        height: 0px;
-        border-style: solid;
-        border-width: 6px 5px 0 5px;
-        border-color: #777777 transparent transparent transparent;
-        text-decoration: none; }
-      .division-studentlife:hover {
-        opacity: 1; } }
+.studentlife-toggle {
+  border-left: 1px solid black;
+  -webkit-box-shadow: -1px 0 0 rgba(255, 255, 255, 0.1);
+  float: right;
+  display: block;
+  text-decoration: none;
+  width: 40px;
+  height: 40px; }
+  .studentlife-toggle img {
+    display: none; }
+  .studentlife-toggle:after {
+    content: '';
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 8px 6px 0 6px;
+    border-color: #999999 transparent transparent transparent;
+    text-decoration: none;
+    position: relative;
+    top: 16px;
+    left: 14px; }
+  .studentlife-toggle:hover {
+    background-color: #111;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.5), -1px 0 0 rgba(255, 255, 255, 0.1); }
 
-.division-studentlife.active:after {
+.studentlife-toggle.active:after {
   border-width: 0 5px 6px 5px;
   border-color: transparent transparent #777777 transparent; }
 
 /* Search
 ========================================================================== */
 .search-toggle {
+  background: url(../images/magnifier-20.png) no-repeat 10px 10px;
+  border-left: 1px solid black;
+  -webkit-box-shadow: -1px 0 0 rgba(255, 255, 255, 0.1);
   display: block;
   float: right;
-  font-size: 0; }
-
-.search-toggle:before {
-  color: #eee;
-  content: '🔍';
-  /* '\1f50d' */
-  font-family: 'search';
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: none;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  font-size: 20px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+  font-size: 0;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  text-indent: -999em; }
+  .search-toggle:hover {
+    background-color: #111;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.5), -1px 0 0 rgba(255, 255, 255, 0.1); }
 
 .division-search {
   display: none;
@@ -1127,41 +1129,25 @@ blockquote:after {
   display: none;
   font-size: 11px; }
 
-.division-directory .row-fluid {
+.directory-wrapper {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 1em 0; }
+
+.dosl, .adr {
+  float: left;
+  width: 50%; }
+  @media screen and (min-width: 768px) {
+    .dosl, .adr {
+      float: none;
+      width: auto; } }
+
+.division-directory .email {
+  color: #ddd; }
 
 .division-directory ul {
   list-style: none;
   margin: 0;
   padding: 0; }
-
-.division-directory li a {
-  border-left: 1px solid #555555;
-  color: #ddd;
-  display: block;
-  padding: 2px 0 2px 10px; }
-
-.division-directory li a:hover {
-  border-left-color: #ffce39; }
-
-.division-directory .org {
-  background: url(../images/dosl-logo-rev.png) no-repeat 0 0;
-  display: block;
-  margin-bottom: 10px;
-  width: 182px;
-  height: 44px; }
-
-.division-directory h5 {
-  color: #ffce39;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  font-weight: normal;
-  letter-spacing: 1px;
-  margin: 0 0 8px;
-  text-transform: uppercase; }
-
-.division-directory .email {
-  color: #ddd; }
 
 /*-------------------------------------------
    	Site specific styles

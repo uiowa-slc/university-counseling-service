@@ -1,0 +1,1 @@
+$(window).load(function(){var e=$(".division-directory"),t=$(".studentlife-toggle");t.click(function(){t.toggleClass("active");e.slideToggle();return!1})});
