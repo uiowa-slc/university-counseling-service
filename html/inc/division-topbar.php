@@ -16,35 +16,39 @@
                         </p>
                     </div>
                 </div>
-                <div class="span3">
-                    <h5><a href="#">Student Success</a></h5>
+                <nav class="division-menu" role="navigation">
                     <ul>
-                        <li><a href="#">Dean of Students</a></li>
-                        <li><a href="#">The Iowa Challenge</a></li>
-                        <li><a href="#">Leadership Development</a></li>
-                        <li><a href="#">Pick One Program</a></li>
-                        <li><a href="#">Student Disability Services</a></li>
+                        <li class="has-subnav">
+                            <a href="#">Student Success</a>
+                            <ul class="">
+                                <li><a href="#">Dean of Students</a></li>
+                                <li><a href="#">The Iowa Challenge</a></li>
+                                <li><a href="#">Leadership Development</a></li>
+                                <li><a href="#">Pick One Program</a></li>
+                                <li><a href="#">Student Disability Services</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-subnav">
+                            <a href="#">Campus Life</a>
+                            <ul>
+                                <li><a href="#">Iowa Memorial Union</a></li>
+                                <li><a href="#">Center for Student Involvement and Leadership</a></li>
+                                <li><a href="#">Recreational Services</a></li>
+                                <li><a href="#">University Housing &amp; Dining</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-subnav">
+                            <a href="#">Health and Safety</a>
+                            <ul>
+                                <li><a href="#">Counseling Services</a></li>
+                                <li><a href="#">Health Iowa</a></li>
+                                <li><a href="#">Student Health Services</a></li>
+                                <li><a href="#">Women’s Resource and Action Center</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </div>
-                <div class="span3">
-                    <h5><a href="#">Campus Life</a></h5>
-                    <ul>
-                        <li><a href="#">Iowa Memorial Union</a></li>
-                        <li><a href="#">Center for Student Involvement and Leadership</a></li>
-                        <li><a href="#">Recreational Services</a></li>
-                        <li><a href="#">University Housing &amp; Dining</a></li>
-                    </ul>
-                </div>
-                <div class="span3">
-                    <h5><a href="#">Health and Safety</a></h5>
-                    <ul>
-                        <li><a href="#">Counseling Services</a></li>
-                        <li><a href="#">Health Iowa</a></li>
-                        <li><a href="#">Student Health Services</a></li>
-                        <li><a href="#">Women’s Resource and Action Center</a></li>
-                    </ul>
-                </div>
-            </div>
+                </nav>
+            </div><!-- end .row-fluid -->
         </div><!-- end .division-directory -->
         <div class="clearfix">
             <a href="http://www.uiowa.edu/" class="uiowa">
