@@ -1,9 +1,9 @@
 
 <div class="division-topbar">
-    <div class="container clearfix">
+    <div class="container clearfix" style="position: relative;">
         <div class="division-directory">
-            <div class="row-fluid directory-wrapper">
-                <div class="span3">
+            <div class="directory-wrapper">
+                <div class="dosl-wrapper">
                     <div class="clearfix">
                         <a href="#" class="dosl">
                             <img src="images/dosl-logo.png" alt="Division of Student Life">
@@ -48,19 +48,25 @@
                         </li>
                     </ul>
                 </nav>
-            </div><!-- end .row-fluid -->
+            </div>
         </div><!-- end .division-directory -->
         <div class="clearfix">
             <a href="http://www.uiowa.edu/" class="uiowa">
                 <img src="images/uiowa.png" alt="The University of Iowa" width="177">
             </a>
 
-            <a href="#" class="search-toggle">Search</a>
-
             <a href="#" class="studentlife-toggle">
                 <img src="images/division_studentlife.png" alt="Division of Student Life" width="224">
             </a>
-        </div>
 
+            <a href="#" class="search-toggle">Search</a>
+        </div>
+        <div class="division-search">
+            <form>
+                <label>Search</label>
+                <input type="text" placeholder="Search" class="division-search-input">
+                <input type="submit" class="division-search-btn">
+            </form>
+        </div>
     </div>
 </div>

@@ -19,12 +19,11 @@
             <h2>Index</h2>
 
             <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.</p>
-            <ul class="the-icons unstyled">
-                <li><i class="icon-menu"></i> <span>icon-menu</span></li>
-                <li><i class="icon-twitter"></i> <span>icon-twitter</span></li>
-                <li><i class="icon-facebook"></i> <span>icon-facebook</span></li>
-                <li><i class="icon-search"></i> <span>icon-search</span></li>
-          </ul>  
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae velit quo blanditiis alias aliquam sequi dolores non tempore illo enim accusantium optio quisquam commodi fugit dolorum ad consequatur rerum quos.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quae blanditiis deserunt necessitatibus temporibus rerum velit optio consectetur in fugit minima deleniti sed laudantium dolores architecto dicta id harum molestias neque vero nulla tenetur voluptatibus sunt voluptate beatae dignissimos cum laborum laboriosam amet. At minima esse sint aspernatur veritatis mollitia. </p>
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorem quibusdam aspernatur et commodi ratione officiis numquam ipsa ad vero quasi sint nulla tempora illo asperiores deleniti sit delectus error totam quisquam veritatis nostrum iste ullam facilis aperiam praesentium eos dicta. Odio ab accusantium totam neque voluptatum dolorem aliquid itaque!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dicta est voluptates commodi molestias adipisci rerum in inventore non eum velit id illo ipsum saepe veritatis consequatur esse itaque aperiam!</p>
 
         </section>
     </div>
