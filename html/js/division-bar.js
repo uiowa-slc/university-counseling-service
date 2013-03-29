@@ -7,7 +7,7 @@ $(window).load(function() {
         return false;
     });
 
-	$('.studentlife-toggle').click(function() {
+	$('.directory-toggle').click(function() {
 		$(this).toggleClass("active");
 		$('.division-directory').slideToggle();
 		return false;

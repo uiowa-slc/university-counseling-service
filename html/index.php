@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <?php include 'inc/division-topbar.php'; ?>
+    <?php include 'inc/division-bar.php'; ?>
 
     <?php include 'inc/header.php'; ?>
 
