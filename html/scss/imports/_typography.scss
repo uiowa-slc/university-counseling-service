@@ -16,8 +16,9 @@ small {font-size: 85%;}
 
 h1,h2,h3,h4,h5,h6 {
     color: #222;
-    font-family: $headline-text;
+    font-family: $heading-text;
     margin: 1em 0 0.5em;
+    letter-spacing: .05em;
     line-height: 1.1;
     font-weight: 600;
 }

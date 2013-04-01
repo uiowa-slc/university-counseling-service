@@ -23,8 +23,8 @@ body {
 	background: #fff;
 	color: #444;
 	font-family: $body-text;
-	font-size: em(16);
-	line-height: 1.5;
+	font-size: 100%;
+	line-height: 1.6;
 	margin: 0;
 	padding: 0;
 }
@@ -34,14 +34,14 @@ body {
 .container {
 	margin: 0 auto;
 	max-width: 980px;
+	position: relative;
 }
 
 
 /* Header
 ========================================================================== */
 .header {
-	background: #fff;
-	border-bottom: 5px solid $yellow;
+	background: #fff url(../images/nav_yellow.gif) repeat-x left bottom;
 	position: relative;
 }
 .logo {
@@ -61,7 +61,102 @@ body {
 }
 
 
+/* Hero
+========================================================================== */
+.hero {
+	background: #0a1a29 url(../images/hero_image.jpg) no-repeat center top;
+	border-bottom: 5px solid $yellow;
+	height: 730px;
+}
+.hero .container {height: inherit;}
+.hero-text {
+	position: absolute;
+	left: 0;
+	bottom: 4em;
+	width: 70%;
+}
+.blocktext {
+	background: rgba(0,0,0,.8);
+	color: #fff;
+	display: inline;
+	font-size: em(39);
+	font-weight: 600;
+	line-height: 1.35;
+	padding: 1px;
+}
+.hero-text ul {
+	list-style: none;
+	margin: 10px 0 0;
+	padding: 0;
+}
+.hero-text li {
+	float: left;
+	margin-right: 10px;
+}
+.hero-text li a {
+	background: $yellow;
+	color: #fff;
+	display: block;
+	font-family: $heading-text;
+	font-size: em(21);
+	font-weight: 600;
+	letter-spacing: .05em;
+	padding: 8px 10px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+	text-transform: uppercase;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-transition: all .2s ease-out;
+	&:hover {
+		text-decoration: none;
+		margin-top: -2px;
+		box-shadow: 0 2px 2px 0 rgba(0,0,0,.3);
+	}
+	&:after {
+		content: ('\2192');
+	}
+}
 
+
+/* Home Highlights
+========================================================================== */
+.home-highlights {
+	background: #f2f2f2;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 3em 0;
+}
+.module {
+	background: #fff;
+	box-shadow: 0 1px 1px rgba(0,0,0,.4);
+	border-radius: 1px;
+	float: left;
+	line-height: 1.4;
+	margin-left: 2.7624309392265194%;
+	overflow: hidden;
+	width: 31.491712707182323%;
+	-webkit-transition: all .2s ease-out;
+}
+.module:first-child {
+	margin-left: 0;
+}
+.module:hover {
+	margin-top: -4px;
+	box-shadow: 0 3px 3px 0 rgba(0,0,0,.4);
+}
+.module .media {
+	border-bottom: 4px solid $yellow;
+}
+.module .inner {
+	font-size: 13px;
+	padding: 1em;
+}
+.module h3 {
+	font-size: 20px;
+	margin: .3em 0 .5em;
+	text-transform: uppercase;
+	& a {
+		color: #333;
+	}
+}
 
 
 /* Footer
