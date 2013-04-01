@@ -175,7 +175,7 @@ button,input {
 }
 .division-search-input {
     -webkit-appearance: textfield;
-    background: #444;
+    background: #333;
     border: 1px solid #000;
     color: #bbb;
     display: inline-block;
@@ -188,9 +188,6 @@ button,input {
     -webkit-border-radius: 15px;
        -moz-border-radius: 15px;
             border-radius: 15px;
-    -webkit-box-shadow: 0 0 9px #121212 inset;
-       -moz-box-shadow: 0 0 9px #121212 inset;
-            box-shadow: 0 0 9px #121212 inset;
     width: 100%;
     -webkit-transition: width 0.2s ease, background-color 0.2s ease;
        -moz-transition: width 0.2s ease, background-color 0.2s ease;
@@ -202,9 +199,6 @@ button,input {
 }
 /* Focus */
 .division-search-input:focus {
-    -webkit-box-shadow: none;
-       -moz-box-shadow: none;
-            box-shadow: none;
     outline: none;
     color: #222;
     text-shadow: none;
@@ -212,6 +206,10 @@ button,input {
     @media screen and (min-width: $break-small) {
         width: 180px;
     }
+}
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: opacity 0.5s 0.5s ease; 
+    opacity: 0;
 }
 .division-search-btn {
     background: url(../images/magnifier-18.png) 0 0 no-repeat;

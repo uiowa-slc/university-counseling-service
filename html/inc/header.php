@@ -1,9 +1,9 @@
 <header class="header clearfix" role="banner">
 	<div class="container">
 		
-		<!-- <h1 class="logo"><a href="/">University Counseling Service</a></h1> -->
+		<h1 class="logo"><a href="/">University Counseling Service</a></h1>
 
-		<!-- <nav role="navigation" class="nav-toggle nav-main-wrapper">
+		<nav role="navigation" class="nav-toggle nav-main-wrapper">
 			<a href="#" class="toggle-menu">
 				<span>Menu</span>
 			</a>
@@ -17,7 +17,7 @@
 					<li><a href="#">Self-Help Articles</a></li>
 				</ul>
 			</div>
-		</nav> -->
+		</nav>
 
 	</div><!-- end .container -->
 </header>
