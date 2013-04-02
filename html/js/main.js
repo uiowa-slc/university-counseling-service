@@ -7,4 +7,9 @@ $(window).load(function() {
 	// 	slideshow: false
 	// });
 
+	$('.nav-title a').click(function() {
+		$('.nav-main-wrapper').toggleClass('expand');
+		return false;
+	})
+
 });

@@ -1,4 +1,4 @@
-<footer class="clearfix" role="contentinfo">
+<footer class="footer clearfix" role="contentinfo">
     <div class="container">
 
         <p>&copy; 2013 University of Iowa</p>

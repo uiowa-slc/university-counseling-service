@@ -26,7 +26,7 @@
         </div>
     </div>
 
-    <section class="home-highlights padding">
+    <section class="home-highlights">
         <div class="container clearfix">
             <div class="module">
                 <div class="media">
@@ -64,25 +64,38 @@
         </div><!-- end .container -->
     </section>
 
-    <section class="padding">
+    <section class="main" role="main">
+    <div class="container">
+        
+            <h2>Index</h2>
+
+            <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae velit quo blanditiis alias aliquam sequi dolores non tempore illo enim accusantium optio quisquam commodi fugit dolorum ad consequatur rerum quos.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quae blanditiis deserunt necessitatibus temporibus rerum velit optio consectetur in fugit minima deleniti sed laudantium dolores architecto dicta id harum molestias neque vero nulla tenetur voluptatibus sunt voluptate beatae dignissimos cum laborum laboriosam amet. At minima esse sint aspernatur veritatis mollitia. </p>
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorem quibusdam aspernatur et commodi ratione officiis numquam ipsa ad vero quasi sint nulla tempora illo asperiores deleniti sit delectus error totam quisquam veritatis nostrum iste ullam facilis aperiam praesentium eos dicta. Odio ab accusantium totam neque voluptatum dolorem aliquid itaque!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dicta est voluptates commodi molestias adipisci rerum in inventore non eum velit id illo ipsum saepe veritatis consequatur esse itaque aperiam!</p>
+        </div>
+    </section>
+    <section>
         <div class="container">
             <div class="row-fluid">
-                <div class="span6 mod">
-                    <h3 class="mod-title">Self-Help Topics</h3>
-                    <ul class="unstyled two-col">
-                        <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-                        <li><a href="#">Laborum distinctio magni dolore recusandae?</a></li>
-                        <li><a href="#">Perferendis distinctio enim nisi magnam!</a></li>
-                        <li><a href="#">Aut perferendis nesciunt molestias in.</a></li>
-                        <li><a href="#">Nisi sunt vitae officia at.</a></li>
-                        <li><a href="#">Nihil provident eos quos earum.</a></li>
-                        <li><a href="#">Dolorum autem ab similique quaerat!</a></li>
-                        <li><a href="#">Quibusdam totam ad maxime repellat.</a></li>
+                <div class="span6">
+                    <h3>Self-Help Topics</h3>
+                    <ul class="two-col">
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Itaque recusandae tempore.</li>
+                        <li>Neque rem maxime.</li>
+                        <li>Error quos amet!</li>
+                        <li>Rem et nam!</li>
+                        <li>Quos nam reprehenderit.</li>
+                        <li>Nam animi aliquid!</li>
+                        <li>Vitae repellendus distinctio.</li>
                     </ul>
                 </div>
-                <div class="span3 mod mod-news">
-                    <h3 class="mod-title">Latest News</h3>
-                    <ul class="unstyled">
+                <div class="span3">
+                    <h3>Latest News</h3>
+                    <ul>
                         <li>
                             <a href="#">Eating Disorder Peer Education Program for Student Volunteers</a>
                             <small>Feb. 26</small>
@@ -93,12 +106,12 @@
                         </li>
                     </ul>
                 </div>
-                <div class="span3 mod">
-                    <h3 class="mod-title">Upcoming Events</h3>
-                    <ul class="unstyled">
-                        <li><a href="#">Big 10 Counseling Centers Conference 2013</a></li>
-                        <li><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
-                        <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                <div class="span3">
+                    <h3>Upcoming Events</h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
                     </ul>
                 </div>
             </div>
