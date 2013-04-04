@@ -31,17 +31,3 @@ $heading-text: "proxima-nova-condensed",sans-serif;
 $body-text: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 
-/*-------------------------------------------
-    Px to Em conversion
--------------------------------------------*/
-$browser-context: 16;
-@function em($pixels, $context: $browser-context) {
-	@return #{$pixels/$context}em
-}
-/* usage: font-size: em(18) */
-
-$browser-context: 16;
-@function rem($pixels, $context: $browser-context) {
-	@return #{$pixels/$context}rem
-}
-/* usage: font-size: em(18) */

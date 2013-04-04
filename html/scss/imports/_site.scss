@@ -1,3 +1,5 @@
+
+
 /* Base styles
 ========================================================================== */
 
@@ -24,7 +26,7 @@ body {
 	color: #444;
 	font-family: $body-text;
 	font-size: 100%;
-	line-height: 1.6;
+	line-height: 1.5;
 	margin: 0;
 	padding: 0;
 }
@@ -33,8 +35,12 @@ body {
 ========================================================================== */
 .container {
 	margin: 0 auto;
-	max-width: 980px;
+	max-width: 1200px;
 	position: relative;
+}
+.main-bg {
+	background: url(../images/hero_image.jpg) no-repeat center top;
+	padding-top: 5em;
 }
 
 
@@ -48,7 +54,7 @@ body {
 	color: #222;
 	display: block;
 	font-family: "proxima-nova-condensed",sans-serif;
-	font-size: em(36);
+	font-size: rem(36);
 	font-weight: 600;
 	line-height: 1.1;
 	margin: 0.5em 0 .2em 0;
@@ -69,7 +75,7 @@ body {
 .hero {
 	background: #0a1a29 url(../images/hero_image.jpg) no-repeat center top;
 	border-bottom: 5px solid $yellow;
-	height: 730px;
+	height: 680px;
 }
 .hero .container {height: inherit;}
 .hero-text {
@@ -119,45 +125,41 @@ body {
 	}
 }
 
-
-/* Home Highlights
+/* 
 ========================================================================== */
-.home-highlights {
-	background: #f2f2f2;
-}
-.module {
+.content-wrapper {
 	background: #fff;
-	box-shadow: 0 1px 1px rgba(0,0,0,.4);
-	border-radius: 1px;
-	float: left;
-	line-height: 1.4;
-	margin-left: 2.7624309392265194%;
-	overflow: hidden;
-	width: 31.491712707182323%;
-	-webkit-transition: all .2s ease-out;
+	min-height: 650px;
+	padding: 0 1em 1em 1em;
 }
-.module:first-child {
-	margin-left: 0;
+.secondary-content {
+	border-left: 1px solid #ddd;
 }
-.module:hover {
-	margin-top: -3px;
-	box-shadow: 0 3px 3px 0 rgba(0,0,0,.4);
+.main-content h1 {
+	border-bottom: 5px solid #333;
+	padding-bottom: 10px;
 }
-.module .media {
-	border-bottom: 4px solid $yellow;
+
+/* Breadcrumbs
+========================================================================== */
+.breadcrumbs {
+	list-style: none;
+	font-size: rem(12);
+	margin: 0;
+	padding: 10px 1em 10px 0;
+	border-bottom: 1px solid #ddd;
 }
-.module .inner {
-	font-size: 13px;
-	padding: 1em;
+.breadcrumbs li {
+	display: inline-block;
 }
-.module h3 {
-	font-size: 20px;
-	margin: .3em 0 .5em;
-	text-transform: uppercase;
-	& a {
-		color: #333;
-	}
+.breadcrumbs .divider {
+	padding: 0 5px;
+	color: #ccc;
 }
+.breadcrumbs .active {
+	color: #999;
+}
+
 
 
 .mod {
@@ -172,6 +174,7 @@ body {
 	font-size: rem(20);
 	margin-bottom: 1em;
 	padding-bottom: 5px;
+	text-transform: uppercase;
 }
 .mod-news small {
 	display: block;
