@@ -3,7 +3,7 @@
         <div class="division-directory clearfix">
             <div class="dosl-wrapper clearfix">
                 <a href="http://studentlife.uiowa.edu/" class="dosl">
-                    <img src="images/dosl-logo.png" alt="Division of Student Life">
+                    <img src="images/division-bar/dosl-logo.png" alt="Division of Student Life">
                 </a>
                 <p class="adr">
                     249 Iowa Memorial Union<br>
@@ -45,11 +45,11 @@
         </div><!-- end .division-directory -->
         <div class="clearfix">
             <a href="http://www.uiowa.edu/" class="uiowa">
-                <img src="images/uiowa.png" alt="The University of Iowa" width="177">
+                <img src="images/division-bar/uiowa.png" alt="The University of Iowa" width="177">
             </a>
 
             <a href="#" class="directory-toggle">
-                <img src="images/division_studentlife.png" alt="Division of Student Life" width="224">
+                <img src="images/division-bar/division_studentlife.png" alt="Division of Student Life" width="224">
             </a>
 
             <a href="#" class="search-toggle">Search</a>

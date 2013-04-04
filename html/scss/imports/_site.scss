@@ -36,6 +36,7 @@ body {
 .container {
 	margin: 0 auto;
 	max-width: 1200px;
+	padding: 0 1em;
 	position: relative;
 }
 .main-bg {
@@ -61,6 +62,7 @@ body {
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
+	text-rendering: optimizelegibility;
 	&:hover {
 		text-decoration: none;
 	}
@@ -149,16 +151,10 @@ body {
 	padding: 10px 1em 10px 0;
 	border-bottom: 1px solid #ddd;
 }
-.breadcrumbs li {
-	display: inline-block;
-}
-.breadcrumbs .divider {
-	padding: 0 5px;
-	color: #ccc;
-}
-.breadcrumbs .active {
-	color: #999;
-}
+.breadcrumbs li{ display: inline;}
+.breadcrumbs li:after{ content: "\25B8"; display: inline-block; padding: 0 6px 0 10px;}
+.breadcrumbs li:last-child:after{content: "";}
+.breadcrumbs a {color: #333;}
 
 
 

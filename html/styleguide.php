@@ -308,12 +308,12 @@
                     <textarea rows="10" style="width:100%;">
 <div class="flexslider">
     <ul class="slides">
-        <li><img src="images/slide1.jpg" alt="" /></li>
+        <li><img src="images/flexslider/slide1.jpg" alt="" /></li>
         <li>
-            <img src="images/slide2.jpg" alt="" />
+            <img src="images/flexslider/slide2.jpg" alt="" />
             <p class="flex-caption">Caption Goes Here.</p>
         </li>
-        <li><img src="images/slide3.jpg" alt="" /></li>
+        <li><img src="images/flexslider/slide3.jpg" alt="" /></li>
     </ul>
 </div>
                     </textarea>

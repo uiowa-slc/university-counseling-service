@@ -17,8 +17,8 @@
         
         <section class="container content-wrapper">
             <ul class="breadcrumbs">
-                <li><a href="#">Home</a> <span class="divider">/</span></li>
-                <li class="active">Self Help</li>
+                <li><a href="#">Home</a></li>
+                <li>Self Help</li>
             </ul>
             <div class="row-fluid">
                 <section class="span9 main-content">
