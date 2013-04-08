@@ -92,7 +92,7 @@ div {
     }
 
 */
-/* normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* normalize.css v2.1.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -107,6 +107,7 @@ figure,
 footer,
 header,
 hgroup,
+main,
 nav,
 section,
 summary {
@@ -137,18 +138,26 @@ audio:not([controls]) {
 /* ==========================================================================
    Base
    ========================================================================== */
-/*
- * 1. Sets default font family to sans-serif.
- * 2. Prevents iOS text size adjust after orientation change, without disabling
+/**
+ * 1. Prevent system color scheme's background color being used in Firefox, IE,
+ *    and Opera.
+ * 2. Prevent system color scheme's text color being used in Firefox, IE, and
+ *    Opera.
+ * 3. Set default font family to sans-serif.
+ * 4. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
 html {
-  font-family: sans-serif;
+  background: #fff;
   /* 1 */
-  -webkit-text-size-adjust: 100%;
+  color: #000;
   /* 2 */
+  font-family: sans-serif;
+  /* 3 */
   -ms-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 4 */
+  -webkit-text-size-adjust: 100%;
+  /* 4 */ }
 
 /*
  * Removes default margin.
@@ -176,13 +185,6 @@ a:hover {
    Typography
    ========================================================================== */
 /*
- * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
- * Safari 5, and Chrome.
- */
-h1 {
-  font-size: 2em; }
-
-/*
  * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
  */
 abbr[title] {
@@ -200,6 +202,14 @@ strong {
  */
 dfn {
   font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
 
 /*
  * Addresses styling not present in IE 8/9.
@@ -222,9 +232,7 @@ samp {
  * Improves readability of pre-formatted text in all browsers.
  */
 pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word; }
+  white-space: pre-wrap; }
 
 /*
  * Sets consistent quote types.
@@ -322,6 +330,16 @@ textarea {
 button,
 input {
   line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none; }
 
 /*
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
