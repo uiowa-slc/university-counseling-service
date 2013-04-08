@@ -5,7 +5,6 @@
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <!--[if lt IE 9]><script src="js/vendor/html5shiv.js"></script><![endif]-->
 <link rel="stylesheet" href="css/master.css">
-<link rel="stylesheet" href="css/print.css" media="print" />
 <!--[if lt IE 9]><script src="js/vendor/respond.min.js"><![endif]-->
 </head>
 
