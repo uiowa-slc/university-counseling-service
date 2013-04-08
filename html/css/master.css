@@ -1826,6 +1826,9 @@ table {
 
 .module {
   background: #fff;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  -ms-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
   border-radius: 2px;
   margin-bottom: 1em; }
@@ -1951,9 +1954,15 @@ table {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#e5e5e5',GradientType=0 );
   /* IE6-9 */
-  -webkit-box-shadow: inset 0 1px 0 white; }
+  -webkit-box-shadow: inset 0 1px 0 white;
+  -moz-box-shadow: inset 0 1px 0 white;
+  -ms-shadow: inset 0 1px 0 white;
+  box-shadow: inset 0 1px 0 white; }
   .nav-title span:after {
     -webkit-box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888;
+    -moz-box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888;
+    -ms-box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888;
+    box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888;
     position: absolute;
     left: 11px;
     top: 0;
@@ -2107,7 +2116,7 @@ body {
       margin-right: 1em;
       padding-left: 1.5em;
       padding-right: 1.5em; } }
-  @media screen and (min-width: 71.25em) {
+  @media screen and (min-width: 66.25em) {
     .content-wrapper {
       margin-left: auto;
       margin-right: auto; } }
@@ -2141,8 +2150,8 @@ body {
   color: #222;
   display: block;
   font-family: "proxima-nova-condensed",sans-serif;
-  font-size: 35px;
-  font-size: 2.33333rem;
+  font-size: 33px;
+  font-size: 2.2rem;
   font-weight: 600;
   line-height: 1.1;
   margin: 0.5em 0 0.2em 0;
