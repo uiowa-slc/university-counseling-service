@@ -136,7 +136,8 @@ h1 {
 	@include rem(14);
 	padding: 8px 0 8px 5px;
 	&:hover {
-		background-color: $yellow;
+		background-color: #000;
+		color: #fff;
 		text-decoration: none;
 	}
 	@media screen and (min-width: $break-medium) {
@@ -144,9 +145,9 @@ h1 {
 	}
 }
 .sec-nav .active a {
-	background: $yellow;
+	background: #000;
+	color: #fff;
 	position: relative;
-	font-weight: bold;
 	@media screen and (min-width: $break-medium) {
 		&:before {
 			content: '';
