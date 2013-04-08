@@ -7,12 +7,18 @@ $browser-context: 16;
 }
 /* usage: font-size: em(18) */
 
-$browser-context: 16;
-@function rem($pixels, $context: $browser-context) {
-    @return #{$pixels/$context}rem
+/*-------------------------------------------
+    Px to Rem conversion
+-------------------------------------------*/
+@mixin rem($size){
+  font-size: $size + px;
+  font-size: ($size / $base-font) + rem;
 }
-/* usage: font-size: em(18) */
-
+/* usage
+    p {
+        @include font-size(13);
+    }
+*/
 
 
 

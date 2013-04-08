@@ -1,30 +1,31 @@
 
-@import "imports/_config.scss";
-@import "imports/_mixins.scss";
-@import "imports/_normalize.scss";
+@import "imports/config";
+@import "imports/mixins";
+@import "imports/normalize";
+@import "imports/_typography.scss";
+@import "imports/global";
 
 
 /*-------------------------------------------
    	Elements
 -------------------------------------------*/
-@import "imports/_typography.scss";
-/*@import "imports/_font.scss";*/
-/*@import "imports/_buttons.scss";*/
-/*@import "imports/_flexslider.scss";*/
-/*@import "imports/_forms.scss";*/
-@import "imports/_grid.scss";
-@import "imports/_nav.scss";
-/*@import "imports/_tables.scss";*/
-
+@import "imports/font";
+@import "imports/buttons";
+/*@import "imports/flexslider";*/
+/*@import "imports/forms";*/
+@import "imports/grid";
+@import "imports/tables";
+@import "imports/print";
 
 /*-------------------------------------------
    	Modules
 -------------------------------------------*/ 
-@import "imports/_division-bar.scss";
-@import "imports/_home.scss";
+@import "imports/division-bar";
+@import "imports/home";
+@import "imports/nav";
 
 
 /*-------------------------------------------
    	Site specific styles
 -------------------------------------------*/
-@import "imports/_site.scss";
+@import "imports/site";

@@ -3,9 +3,10 @@
 <title>Home | Acme Inc.</title>
 <script type="text/javascript" src="//use.typekit.net/ivn3muh.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<!--[if lt IE 9]><script src="js/vendor/html5shiv.js"></script><![endif]-->
 <link rel="stylesheet" href="css/master.css">
 <link rel="stylesheet" href="css/print.css" media="print" />
-<!--[if lt IE 9]><script src="js/vendor/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/vendor/respond.min.js"><![endif]-->
 </head>
 
 <body>
@@ -52,9 +53,7 @@
             </div>
             <div class="module">
                 <div class="media">
-                    <a href="#">
-                        <img src="images/home_diversity.jpg" alt="Our Staff">
-                    </a>
+                    <iframe src="http://www.youtube.com/embed/01Wd0YlDMcA?rel=0" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="inner">
                     <h3><a href="#">We Welcome Diversity</a></h3>

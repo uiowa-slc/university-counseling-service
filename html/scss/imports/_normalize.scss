@@ -357,9 +357,13 @@ input::-moz-focus-inner {
  */
 
 textarea {
+    height: auto;
+    min-height: 50px;
     overflow: auto; /* 1 */
     vertical-align: top; /* 2 */
 }
+
+html,button,input,select,textarea {color: #222;}
 
 /* ==========================================================================
    Tables

@@ -3,9 +3,10 @@
 <title>Home | Acme Inc.</title>
 <script type="text/javascript" src="//use.typekit.net/ivn3muh.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<!--[if lt IE 9]><script src="js/vendor/html5shiv.js"></script><![endif]-->
 <link rel="stylesheet" href="css/master.css">
 <link rel="stylesheet" href="css/print.css" media="print" />
-<!--[if lt IE 9]><script src="js/vendor/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/vendor/respond.min.js"><![endif]-->
 </head>
 
 <body>
@@ -15,31 +16,53 @@
 
     <div class="main-bg">
         
-        <section class="container content-wrapper">
+        <section class="container content-wrapper clearfix">
             <ul class="breadcrumbs">
                 <li><a href="#">Home</a></li>
-                <li>Self Help</li>
+                <li><a href="#">Self Help</a></li>
+                <li>How To Prepare For Exams</li>
             </ul>
-            <div class="row-fluid">
-                <section class="span9 main-content">
-                    <h1>How to Prepare For Exams</h1>
-                    <p>The purpose of the written examination is to provide the instructor with evidence regarding the amount of knowledge the student has acquired in the course. It is not feasible to ask questions about everything in the course; therefore, the instructor tries to obtain a broad sample of the student's knowledge. Before making the test, the instructor evaluates the content of the course in terms of the importance of the materials and then phrases the questions in such a way as to reveal the facility of the student in using the concepts and ideas considered basic to the course.</p>
-                    <p>The student's ability to meet the requirements of the instructor depends primarily upon the effectiveness of his/her study methods during the term. If his/her methods have been poor, then the task of preparing for a final examination becomes extremely arduous with chances of success correspondingly reduced.</p>
+            <section class="main-content">
+                <h1>How to Prepare For Exams</h1>
+                <p class="lede">The purpose of the written examination is to provide the instructor with evidence regarding the amount of knowledge the student has acquired in the course. It is not feasible to ask questions about everything in the course; therefore, the instructor tries to obtain a broad sample of the student's knowledge. </p>
+                <p>Before making the test, the instructor evaluates the content of the course in terms of the importance of the materials and then phrases the questions in such a way as to reveal the facility of the student in using the concepts and ideas considered basic to the course.</p>
+                <p>The student's ability to meet the requirements of the instructor depends primarily upon the effectiveness of his/her study methods during the term. If his/her methods have been poor, then the task of preparing for a final examination becomes extremely arduous with chances of success correspondingly reduced.</p>
+                <h2>Lorem Ipsum Dolor</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, quia, autem minus magnam atque enim neque nam rem quidem ab reprehenderit suscipit aperiam earum labore consequatur provident ad id illum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                <h3>Dapibus Inceptos Parturient</h3>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus.</p>
+            </section>
+            <section class="sec-content">
+                <h3 class="section-title">Self-Help</h3>
+                <nav class="sec-nav">
+                    <ul>
+                        <li><a href="#">Anxiety</a></li>
+                        <li><a href="#">Assertiveness</a></li>
+                        <li class="active"><a href="#">Career</a></li>
+                        <li><a href="#">Change</a></li>
+                        <li><a href="#">Confidentiality</a></li>
+                        <li><a href="#">Conflict</a></li>
+                        <li><a href="#">Counseling</a></li>
+                        <li><a href="#">Disability</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Grief and Loss</a></li>
+                    </ul>
+                </nav>
+                <aside>
+                    <div class="mod photo">
+                        <div>
+                            <h3>Outreach Programs</h3>
+                            <img src="images/home_outreach.jpg" alt="">
+                        </div>
+                        <p>Defining a nascent field of study with potential for broad impact. <a href="#">Read More</a></p>
+                    </div>
 
-                </section>
-                <section class="span3 secondary-content">
-                    <nav>
-                        <h3>Self Help</h3>
-                        <ul>
-                            <li><a href="#">Lorem ipsum dolor.</a></li>
-                            <li><a href="#">Aliquam, dolore, consequatur.</a></li>
-                            <li><a href="#">Esse, iure, eius.</a></li>
-                            <li><a href="#">Quos, ex, odit!</a></li>
-                            <li><a href="#">Sequi, saepe, assumenda.</a></li>
-                        </ul>
-                    </nav>
-                </section>
-            </div>
+                     <div class="mod">
+                        <h3>Module Name</h3>
+                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    </div>
+                </aside>
+            </section>
         </section>
 
         <section class="padding">

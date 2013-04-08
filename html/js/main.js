@@ -12,4 +12,7 @@ $(window).load(function() {
 		return false;
 	})
 
+	/* FitVids */
+	$(".module .media").fitVids();
+
 });

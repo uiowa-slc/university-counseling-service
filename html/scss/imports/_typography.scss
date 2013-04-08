@@ -1,10 +1,6 @@
-/* css/scss/imports/typography.scss
+/* /scss/imports/typography.scss
 ========================================================================== */
-a {color:#0088cc; outline:none; text-decoration: none;
-    -webkit-transition: color 0.2s ease-in-out;
-       -moz-transition: color 0.2s ease-in-out;
-         -o-transition: color 0.2s ease-in-out;
-            transition: color 0.2s ease-in-out;}
+a {color: $link-color; outline:none; text-decoration: none;}
 a:hover {text-decoration: underline;}
 a:active {color:#0088cc;}
 a:focus {outline:thin dotted;}
@@ -16,39 +12,53 @@ small {font-size: 85%;}
 
 h1,h2,h3,h4,h5,h6 {
     color: #333;
-    font-family: $heading-text;
+    font-family: $heading-font;
     margin: 1em 0 0.5em;
-    xletter-spacing: .05em;
     line-height: 1.1;
     font-weight: 600;
     text-rendering: optimizelegibility;
 }
-h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {text-decoration:none;}
-h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover {
-    text-decoration:underline;
+h1, .h1 {
+    @include rem(45);
+    margin: .75em 0 .5em;
+    text-transform: uppercase;
 }
-h1 {font-size: em(45); text-transform: uppercase;}
-h2 {font-size: em(30);}
-h3 {font-size: em(20);}
-h4 {font-size: em(18);}
-h5 {font-size: em(17);}
-h6 {font-size: em(16);}
+h2, .h2 {
+    @include rem(33);
+}
+h3, .h3 {
+    @include rem(26);
+}
+h4, .h4 {
+    @include rem(20);
+}
+h5, .h5 {
+    @include rem(17);
+}
+h6, .h6 {
+    @include rem(16);
+}
 h1 + h2,
 h2 + h3,
 h3 + h4,
 h4 + h5,
 h5 + h6 {margin-top:0;}
 
+h1 + p {
+    @include rem($base-font * 1.2);
+}
+
 ul,ol {
     padding: 0;
-    margin-left: em(30);
+    margin-left: 24px;
 }
 ul ul,ul ol,ol ol,ol ul {
     margin-bottom: 0;
 }
 ul.unstyled, ol.unstyled {
-    margin-left: 0;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 dt {
     font-weight: bold;

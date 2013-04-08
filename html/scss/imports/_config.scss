@@ -1,33 +1,29 @@
 /*-------------------------------------------
     Colors
 -------------------------------------------*/
-$black: #050f0b;
-$blue: #245f6b;
-$dk-blue: #132339;
-$coral: #d29a79;
-$cream: #ede7C9;
-$white: #f8faf0;
+$link-color: #0088cc;
 $yellow: #ffce39;
 
 
 /*-------------------------------------------
     Sizes
 -------------------------------------------*/
-$base: 12px;
-$base-sm: $base/2;
-$base-med: $base * 2;
-$base-lg: $base * 3;
-$base-xl: $base * 4;
-
-$base-font-size: 14px;
-$base-font-rem: 1.4rem;
-$base-line-height: $base-med;
+$base-font: 15;
+$base-font-size: 15px;
 
 
 /*-------------------------------------------
     Fonts
 -------------------------------------------*/
-$heading-text: "proxima-nova-condensed",sans-serif;
-$body-text: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$heading-font: "proxima-nova-condensed",sans-serif;
+/*$body-font: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;*/
+$body-font: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
 
 
+/*-------------------------------------------
+    Media Queries
+-------------------------------------------*/
+$break-small: 30em; /* 480px / 16px; */
+$break-medium: 48em; /* 768px / 16px; */
+$break-large: 61.25em; /* 980px / 16px; */
+$break-xlarge: 71.25em; /* 1140px / 16px; */
