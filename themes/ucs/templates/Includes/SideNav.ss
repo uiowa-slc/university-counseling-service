@@ -24,7 +24,7 @@
 	<ul>
 		<% if Menu(2) %>
 			<% loop Menu(2) %>
-				<li><a href="$Link" class="$LinkOrCurrent">$MenuTitle</a></li>
+				<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>><a href="$Link">$MenuTitle</a></li>
 			<% end_loop %>
 		<% end_if %>
 	</ul>

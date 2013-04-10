@@ -15,7 +15,7 @@ class StaffHolderPage extends Page {
 	
 	public function getCMSFields(){
 		$f = parent::getCMSFields();
-		$f->removeByName("Content");
+		//$f->removeByName("Content");
 		//$gridFieldConfig = GridFieldConfig_RecordEditor::create();
 		//$gridFieldConfig->addComponent(new GridFieldSortableRows('SortOrder'));
 		

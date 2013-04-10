@@ -165,6 +165,9 @@ div {
 ------------------------------------------------------*/
 /* line 19, ../scss/editor.scss */
 .typography {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
   /* /scss/imports/typography.scss
   ========================================================================== */
   /* Quotes
