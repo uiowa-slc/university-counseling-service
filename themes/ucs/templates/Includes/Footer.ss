@@ -37,7 +37,7 @@
 			</div>
         </div>
         <hr>
-        <p>&copy; 2013 University of Iowa. All Rights Reserved.</p>
+        <p>&copy; $Now.Year University of Iowa. All Rights Reserved.</p>
         
     </div>
 </footer>
