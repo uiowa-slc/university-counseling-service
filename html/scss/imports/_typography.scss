@@ -44,7 +44,7 @@ h3 + h4,
 h4 + h5,
 h5 + h6 {margin-top:0;}
 
-h1 + p {
+h1 + p, .lede {
     @include rem($base-font * 1.2);
 }
 
