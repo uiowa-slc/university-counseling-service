@@ -12,38 +12,41 @@
     </div>
 <section class="home-highlights padding">
         <div class="container clearfix">
+        
             <div class="module">
                 <div class="media">
-                    <a href="#">
-                        <img src="{$ThemeDir}/images/home_staff.jpg" alt="Our Staff">
+                    <a href="$Feature1Link.Link">
+                        <img src="$Feature1Image.Link" alt="$Feature1Title">
                     </a>
                 </div>
                 <div class="inner">
-                    <h3><a href="#">Our Staff</a></h3>
-                    <p>We are a professional staff of twelve doctoral-level psychologists, one case manager, and three psychology interns. <a href="#">View our staff profiles.</a></p>
+                    <h3><a href="$Feature1Link.Link">$Feature1Title</a></h3>
+                    	$Feature1Content
                 </div>
             </div>
-            <div class="module">
+             <div class="module">
                 <div class="media">
-                    <a href="#">
-                        <img src="{$ThemeDir}/images/home_outreach.jpg" alt="Our Staff">
+                    <a href="$Feature2Link.Link">
+                        <img src="$Feature2Image.Link" alt="$Feature2Title">
                     </a>
                 </div>
                 <div class="inner">
-                    <h3><a href="#">Outreach Programs</a></h3>
-                    <p>Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Cras justo odio dapibus facilisis in egestas eget.</p>
+                    <h3><a href="$Feature2Link.Link">$Feature2Title</a></h3>
+                    	$Feature2Content
                 </div>
             </div>
             <div class="module">
                 <div class="media">
-                    <iframe src="http://www.youtube.com/embed/01Wd0YlDMcA?rel=0" frameborder="0" allowfullscreen></iframe>
+                    <a href="$Feature3Link.Link">
+                        <img src="$Feature3Image.Link" alt="$Feature3Title">
+                    </a>
                 </div>
                 <div class="inner">
-                    <h3><a href="#">We Welcome Diversity</a></h3>
-                    <p>In all individual, group, and program services we strive to create an environment where all people feel welcome. Learn more.</p>
+                    <h3><a href="$Feature3Link.Link">$Feature3Title</a></h3>
+                    	$Feature3Content
                 </div>
-            </div>
-        </div><!-- end .container -->
+            </div>                       
+                    </div><!-- end .container -->
     </section>
 
     <% include TopicsAndNews %>
