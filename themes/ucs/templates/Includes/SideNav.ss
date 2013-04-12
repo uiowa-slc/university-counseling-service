@@ -29,3 +29,19 @@
 		<% end_if %>
 	</ul>
 </nav>
+<aside>
+	<% if InheritSidebarItems %>
+		<% if inheritedSidebarItems %>
+			<% loop inheritedSidebarItems %>
+				<% include SidebarItem %>
+			<% end_loop %>
+			
+		<% end_if %>
+	<% end_if %>
+	
+	<% if SidebarItems %>
+		<% loop SidebarItems %>
+			<% include SidebarItem %>
+		<% end_loop %>
+	<% end_if %>
+</aside>

@@ -2,12 +2,20 @@
 class Page extends SiteTree {
 
 	public static $db = array(
+		"InheritSidebarItems" => "Boolean"
 	);
 
 	public static $has_one = array(
 	);
 	
+	
+	public static $has_many = array (
+		"SidebarItems" => "SidebarItem"
+	);
+	
 	public static $defaults = array (
+	
+		"InheritSidebarItems" => "1",
 	
 		"Content" => 
 			"<h1>H1. This is a very large header.</h1>
@@ -25,6 +33,65 @@ class Page extends SiteTree {
 	
 	);
 	
+	
+	public function getCMSFields(){
+		$f = parent::getCMSFields();
+		
+		$gridFieldConfig = GridFieldConfig_RelationEditor::create();
+		$gridFieldConfig->addComponent(new GridFieldSortableRows('SortOrder'));
+		$gridField = new GridField("SidebarItems", "Sidebar Items", $this->SidebarItems(), $gridFieldConfig);
+		
+		$f->addFieldToTab("Root.Sidebar", new LabelField("SidebarLabel", "<h2>Add sidebar items below</h2>"));
+		
+		if($this->getParent()){
+		$f->addFieldToTab("Root.Sidebar", new CheckboxField("InheritSidebarItems", "Inherit parent page's sidebar items"));
+		}
+		$f->addFieldToTab("Root.Sidebar", $gridField); // add the grid field to a tab in the CMS	*
+		
+		return $f;
+	}
+	
+	public function inheritedSidebarItems(){
+	
+		$items = array();
+		
+		if($this->getParent()){
+
+			$parent = $this->getParent();
+			$parent_items = $parent->SidebarItems();
+			
+			foreach($parent_items as $parent_item){
+				$items[] = $parent_item;
+			}
+
+		}else{		
+			echo $this->Title." is parentless";
+			$items = $this->SidebarItems()->toArray();	
+				
+		}
+		
+		$itemList = new ArrayList($items);
+		
+		return $itemList;
+		
+	}
+	
+	/*public function getAllSidebarItems(){
+	
+		$items = array();
+		
+		$items[] = $this->SidebarItems()->toArray();
+		if(!$this->getParent()){
+		
+			return $items;
+			
+		}else if($this->InheritSidebarItems){
+		
+					}
+			
+		return $items;
+		
+	}*/
 
 }
 class Page_Controller extends ContentController {
