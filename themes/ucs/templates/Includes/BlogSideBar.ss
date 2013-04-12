@@ -1,5 +1,5 @@
 <aside>
-<div id="Sidebar" class="mod">
+<div id="blog-sidebar">
 	$SideBar
 </div>
 </aside>

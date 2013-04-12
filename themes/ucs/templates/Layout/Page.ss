@@ -1,5 +1,4 @@
-
-        
+<div class="main-bg">
         <section class="container content-wrapper clearfix">
             $Breadcrumbs
             <section class="main-content">
@@ -13,4 +12,5 @@
         </section>
 
       <% include TopicsAndNews %>
-    </div>
+
+</div>

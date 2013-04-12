@@ -5,7 +5,7 @@
                         <h3 class="mod-title">Self-Help Topics</h3>
                         <ul class="unstyled two-col">
                         	<% with Page("self-help") %>
-	                        	<% loop $Entries %>
+	                        	<% loop $Entries('8') %>
 	                        		<li><a href="$Link">$MenuTitle</a></li>
 	                            <% end_loop %>
                             <% end_with %>
@@ -16,11 +16,13 @@
 							<% if $Entries %>
 						        <h3 class="mod-title">Latest News</h3>
 						        <ul class="unstyled">
-						        	<% loop $Entries %>
+						        	<% loop $Entries('3') %>
 						        	<li><a href="$Link">$MenuTitle</a>
-						        		<small>$Date.NiceUS</small>
+						        		<% if $Date %><small>$Date.Format('M. n')</small><% end_if %>
 						        	</li>
 						        	<% end_loop %>
+						        	<li><a href="$Link">View all News</a></li>
+
 						        </ul>
 							<% end_if %>
 						<% end_with %>
@@ -30,11 +32,12 @@
 							<% if $Entries('','event') %>
 						        <h3 class="mod-title">Upcoming Events</h3>
 						        <ul class="unstyled">
-						        	<% loop $Entries('','event') %>
+						        	<% loop $Entries('3','event') %>
 						        	<li><a href="$Link">$MenuTitle</a>
-						        		<small>Published on $Date.NiceUS</small>
+						        		<% if $Date %><small>published on $Date.Format('M. n')</small><% end_if %>
 						        	</li>
 						        	<% end_loop %>
+						        	<li><a href="{$Link}tag/event">View all Events</a></li>
 						        </ul>
 							<% end_if %>
 						<% end_with %>

@@ -1,9 +1,9 @@
-	<section class="container content-wrapper clearfix">
+<div class="main-bg">	
+<section class="container content-wrapper clearfix">
             $Breadcrumbs
             <section class="main-content">
             	$Form
             	$Content
-            	
             	<% loop StaffTeams %>
             	<h2>$Title</h2>
             		<% loop $StaffPages %>
@@ -17,4 +17,4 @@
             </section>
         </section>
       <% include TopicsAndNews %>
-    </div>
+</div>

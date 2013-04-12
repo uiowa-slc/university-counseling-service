@@ -1,15 +1,11 @@
     <div class="main-bg">
         
         <section class="container content-wrapper clearfix">
-            <!--<ul class="breadcrumbs">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Self Help</a></li>
-                <li>How To Prepare For Exams</li>
-            </ul>-->
             $Breadcrumbs
             <section class="main-content">
   
-				<h2 class="postTitle">$Title</h2>
+	         <article>
+				<h1 class="postTitle">$Title</h1>
 				<p class="authorDate"><% _t('POSTEDBY', 'Posted by') %> $Author.XML <% _t('POSTEDON', 'on') %> $Date.Long | $Comments.Count <% _t('COMMENTS', 'Comments') %></p>
 				<% if TagsCollection %>
 					<p class="tags">
@@ -27,6 +23,7 @@
             	<%-- include SideNav --%>
             	<% include BlogSideBar %>
            </section>
+           </article>
         </section>
 
         <% include TopicsAndNews %>

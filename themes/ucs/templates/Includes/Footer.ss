@@ -3,7 +3,7 @@
 
         <div class="row-fluid">
 			<div class="span5">
-				<img src="{$ThemeDir}/images/dosl-uiowa.png" alt="Division Of Student Life" style="margin-top: -20px;"><br>
+				<a href="http://studentlife.uiowa.edu"><img src="{$ThemeDir}/images/dosl-uiowa.png" alt="Division Of Student Life" style="margin-top: -20px;"></a><br>
 				<p style="margin-left: 83px;">University Counseling Service supports mental well-being, nurtures student success, and contributes to a safe, welcoming, and multiculturally-aware campus community.</p>
 				<p style="margin-left: 83px;">3233 Westlawn S.<br>
 					Iowa City, IA 52242<br>
@@ -34,7 +34,7 @@
 			</div>
         </div>
         <hr>
-        <p>&copy; $Now.Year University of Iowa. All Rights Reserved.</p>
+        <p>&copy; $Now.Year <a href="http://www.uiowa.edu/" target="_blank">The University of Iowa</a>. All Rights Reserved.</p>
         
     </div>
 </footer>

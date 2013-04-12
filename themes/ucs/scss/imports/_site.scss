@@ -108,16 +108,9 @@ body {
 	}
 }
 
-/* 
-========================================================================== */
-h1 {
-	border-bottom: 5px solid #333;
-	padding-bottom: 10px;
-}
-
 /* Secondary Navigation
 ========================================================================== */
-.section-title {
+.section-title, #blog-sidebar h3 {
 	text-transform: uppercase;
 	@media screen and (min-width: $break-medium) {
 		margin-left: 15px;
