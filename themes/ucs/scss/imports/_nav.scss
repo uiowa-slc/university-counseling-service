@@ -139,10 +139,10 @@
 	}
 	@media screen and (min-width: $break-large) {
 		@include rem(20);
-		padding: .25em 1.25em .55em;
+		padding: .25em 1.2em .55em;
 	}
 	@media screen and (min-width: $break-xlarge) {
-		padding: .25em 1.65em .55em;
+		padding: .25em 1.55em .55em;
 	}
 }
 .nav-main li:last-child a {
