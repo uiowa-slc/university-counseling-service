@@ -12,41 +12,24 @@
     </div>
 <section class="home-highlights padding">
         <div class="container clearfix">
-        
-            <div class="module">
-                <div class="media">
-                    <a href="$Feature1Link.Link">
-                        <img src="$Feature1Image.Link" alt="$Feature1Title">
-                    </a>
-                </div>
-                <div class="inner">
-                    <h3><a href="$Feature1Link.Link">$Feature1Title</a></h3>
-                    	$Feature1Content
-                </div>
-            </div>
-             <div class="module">
-                <div class="media">
-                    <a href="$Feature2Link.Link">
-                        <img src="$Feature2Image.Link" alt="$Feature2Title">
-                    </a>
-                </div>
-                <div class="inner">
-                    <h3><a href="$Feature2Link.Link">$Feature2Title</a></h3>
-                    	$Feature2Content
-                </div>
-            </div>
-            <div class="module">
-                <div class="media">
-                    <a href="$Feature3Link.Link">
-                        <img src="$Feature3Image.Link" alt="$Feature3Title">
-                    </a>
-                </div>
-                <div class="inner">
-                    <h3><a href="$Feature3Link.Link">$Feature3Title</a></h3>
-                    	$Feature3Content
-                </div>
-            </div>                       
-                    </div><!-- end .container -->
+	        <% loop HomePageFeatures %>
+	            <div class="module">
+	                <div class="media">
+	                <% if $YouTubeEmbed %>  
+	                	$YouTubeEmbed      
+	                <% else %>
+	                    <a href="$AssociatedPage.Link">
+	                        <img src="$Image.URL" alt="$Title">
+	                    </a>
+	                <% end_if %>
+	                </div>
+	                <div class="inner">
+	                    <h3><a href="$AssociatedPage.Link">$Title</a></h3>
+	                    	$Content
+	                </div>
+	            </div>
+	         <% end_loop %>
+         </div><!-- end .container -->
     </section>
 
     <% include TopicsAndNews %>
