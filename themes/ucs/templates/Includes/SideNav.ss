@@ -10,7 +10,7 @@
 				<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>><a href="$Link">$MenuTitle</a>
 				
 				<%-- third level nav option 1 --%>
-					<% if Children %>
+					<% if $LinkOrSection = "section" && Children %>
 						<ul>
 							<% loop Children %>
 								<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>>
