@@ -20,7 +20,7 @@
 					
 					<% if BlogEntries %>
 						<% loop BlogEntries %>
-							<% include BlogSummary %>
+							<% include SelfHelpTopicSummary %>
 						<% end_loop %>
 					<% else %>
 						<h2><% _t('NOENTRIES', 'There are no blog entries with this tag.') %></h2>
