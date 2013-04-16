@@ -6,7 +6,7 @@
   
 	         <article>
 				<h1 class="postTitle">$Title</h1>
-				<p class="authorDate"><% _t('POSTEDBY', 'Posted by') %> $Author.XML <% _t('POSTEDON', 'on') %> $Date.Long | $Comments.Count <% _t('COMMENTS', 'Comments') %></p>
+				<p class="authorDate"><% _t('POSTEDBY', 'Posted by') %> $Author.XML <% _t('POSTEDON', 'on') %> $Date.Long</p>
 				<% if TagsCollection %>
 					<p class="tags">
 						 <% _t('TAGS', 'Tags:') %> 

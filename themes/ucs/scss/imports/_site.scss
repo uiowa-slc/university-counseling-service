@@ -176,6 +176,8 @@ body {
 .breadcrumbs li:last-child:after{content: "";}
 
 
+/* Modules
+========================================================================== */
 .mod {
 	@include rem(13);
 	line-height: 1.4;
@@ -229,6 +231,14 @@ aside .mod {
 	}
 }
 
+
+
+.tags {
+	border-bottom: 1px solid #ddd;
+	margin-top: -10px;
+	padding-bottom: 12px;
+	margin-bottom: 1.5em;
+}
 /* Footer
 ========================================================================== */
 .footer {
