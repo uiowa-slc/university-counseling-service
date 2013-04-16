@@ -57,7 +57,7 @@ body {
 	@media screen and (min-width: $break-medium) {
 		border-right: 1px solid #ddd;
 		padding-right: 1.5em;
-		width: 75%;
+		width: 70%;
 	}
 	
 }
@@ -65,7 +65,7 @@ body {
 	@media screen and (min-width: $break-medium) {
 		border-left: 1px solid #ddd;
 		margin-left: -1px;
-		width: 25%;
+		width: 30%;
 	}
 }
 .padding {padding: 3em 0;}
@@ -168,7 +168,7 @@ body {
 	list-style: none;
 	@include rem(12);
 	margin: 0;
-	padding: 10px 1em 10px 0;
+	padding: 13px 1em 10px 0;
 	border-bottom: 1px solid #ddd;
 }
 .breadcrumbs li{ display: inline;}
