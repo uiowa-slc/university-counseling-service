@@ -11,7 +11,7 @@ table {
     max-width : 100%;
     & th, & td {
         padding: 8px;
-        @include rem($base-font / 1.25);
+        font-size: 13px;
         line-height: 1.5;
         text-align: left;
         vertical-align: top;
