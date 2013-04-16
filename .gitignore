@@ -1,3 +1,4 @@
 .sass-cache/*
 *.scssc
 html/*
+.DS_Store
