@@ -10,8 +10,12 @@ class SelfHelpTopicsHolder extends BlogHolder {
 
 	public static $has_many = array(
 	);
+	
+	static $singular_name = 'Self Help Topic Holder';
+	
+	static $plural_name = 'Self Help Topic Holders';
 
-	public static $allowed_children = array("SelfHelpTopic");
+	public static $allowed_children = array("SelfHelpTopic","BlogEntry");
 	
 	public function getCMSFields(){
 		$f = parent::getCMSFields();

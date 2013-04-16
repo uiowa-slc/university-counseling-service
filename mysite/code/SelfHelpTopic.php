@@ -10,6 +10,10 @@ class SelfHelpTopic extends BlogEntry {
 
 	public static $has_many = array(
 	);
+	
+	static $singular_name = 'Self Help Topic';
+	
+	static $plural_name = 'Self Help Topics';
 
 	public static $allowed_children = array("SelfHelpTopic");
 	

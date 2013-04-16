@@ -65,7 +65,7 @@ class Page extends SiteTree {
 			}
 
 		}else{		
-			echo $this->Title." is parentless";
+			//echo $this->Title." is parentless";
 			$items = $this->SidebarItems()->toArray();	
 				
 		}
