@@ -3,9 +3,9 @@
             <div class="hero-text">
                 <h2 class="blocktext">We offer a variety of counseling services, outreach, and training for U.of Iowa students and staff.</h2>
                 <ul>
-                    <li><a href="#">Counseling</a></li>
-                    <li><a href="#">Outreach</a></li>
-                    <li><a href="#">Training</a></li>
+                    <li><a href="services/counseling">Counseling</a></li>
+                    <li><a href="services/outreach">Outreach</a></li>
+                    <li><a href="services/training">Training</a></li>
                 </ul>
             </div>
         </div>
