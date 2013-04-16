@@ -2,22 +2,15 @@
 ========================================================================== */
 html {
 	font-size: $base-font-size;
-	@media screen and (min-width: $break-xlarge) {
-		font-size: $base-font-size + 1;
-	}
 }
 body {
 	background: #fff;
 	color: #444;
 	font-family: $body-font;
 	font-size: $base-font-size;
-	line-height: 1.5;
+	line-height: 1.6;
 	margin: 0;
 	padding: 0;
-	@media screen and (min-width: $break-xlarge) {
-		font-size: $base-font-size + 1;
-		line-height: 1.6;
-	}
 }
 
 /* Division Bar
