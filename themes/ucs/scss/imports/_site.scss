@@ -83,6 +83,7 @@ body {
 	font-family: "proxima-nova-condensed",sans-serif;
 	@include rem(33);
 	font-weight: 600;
+	letter-spacing: 1px;
 	line-height: 1.1;
 	margin: 0.5em 0 .2em 0;
 	text-align: center;
@@ -106,7 +107,11 @@ body {
 .section-title, #blog-sidebar h3 {
 	text-transform: uppercase;
 	@media screen and (min-width: $break-medium) {
-		margin-left: 15px;
+		margin: 1.25em 0 1.20em 15px;
+		font-size: 30px;
+	}
+	& a {
+		color: #333;
 	}
 }
 .sec-nav ul {
@@ -151,12 +156,12 @@ body {
 			width: 0px;
 			height: 0px;
 			border-style: solid;
-			border-width: 10px 0 10px 8px;
+			border-width: 21px 0 21px 8px;
 			border-color: transparent transparent transparent #fff;
 			position: absolute;
 			left: -1px;
 			top: 50%;
-			margin-top: -10px;
+			margin-top: -21px;
 		}
 	}
 }
@@ -243,7 +248,40 @@ aside .mod {
 .post-link {
 	margin: 1.5em 0;
 }
+/* Pagination */
+.pagination {
+	margin: 1em 0;
+	text-align: center;
+}
+.pagination li {
+	display: inline;
+}
+.pagination li a {
+	color: #666;
+	padding: 4px 12px;
+}
+.PageNumbers {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.pagination .prev {
 
+}
+.pagination .next {
+
+}
+.pagination .active a {
+	background: #000;
+	color: #fff;
+}
+.paginate-right {
+
+}
+.pagination .disabled {
+
+}
 
 /* Footer
 ========================================================================== */
