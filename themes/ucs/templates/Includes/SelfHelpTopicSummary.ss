@@ -4,10 +4,10 @@
 	<% if BlogHolder.ShowFullEntry %>
 		$Content
 	<% else %> 
-		$Content.FirstParagraph(html)
+		<p>$Content.LimitWordCount(30)</p>
 	<% end_if %>
 	
-	<p class="blogVitals"><a href="$Link" class="readmore" title="Read Full Post">Read the full post</a></p>
+	<p class="post-link"><a href="$Link" class="readmore btn" title="Read Full Post">Read the full post</a></p>
 
 	<% if TagsCollection %>
 		<p class="tags-summary">
