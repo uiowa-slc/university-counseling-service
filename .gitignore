@@ -2,3 +2,4 @@
 *.scssc
 html/*
 .DS_Store
+_config.php
