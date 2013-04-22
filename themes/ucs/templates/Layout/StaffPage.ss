@@ -2,18 +2,15 @@
 <section class="container content-wrapper clearfix">
             $Breadcrumbs
             <section class="main-content">
-            	$Form
-            	$Content
-            	<% loop StaffTeams %>
-                        
-            	     <h2>$Title</h2>
-                       
-            		<% loop $StaffPages %>
-            			<p>$FirstName $LastName</p>
-            		<% end_loop %>
 
-            	<% end_loop %>
+            	<h1>$Title</h1>
+
+            	<% if $Photo %>
+            		<img src="$Photo.SetWidth(693).URL" alt="$FirstName $LastName">
+            	<% end_if %>
             	
+            	$Content
+       
             </section>
             <section class="sec-content">
             	<% include SideNav %>
