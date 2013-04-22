@@ -233,6 +233,31 @@ aside .mod {
 	}
 }
 
+/* Staff Page
+========================================================================== */
+.staff-content {
+
+}
+.staff-title {
+	clear: both;
+}
+.staff-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	& li {
+		float: left;
+		margin: 0 1% 2em 1%;
+		width: 23%;
+	}
+}
+.staff-link {
+	display: block;
+}
+.staff-name {
+	display: block;
+}
+
 
 /* Blog
 ========================================================================== */
@@ -319,5 +344,18 @@ aside .mod {
 	border-top-color: #000;
 	border-bottom-color: #2e2e2e;
     margin: .5em 0;
+}
+.appt-btn {
+	border: 3px solid #eee;
+	color: #eee;
+	display: block;
+	margin-top: 12px;
+	padding: 5px;
+	text-align: center;
+	&:hover {
+		background: #eee;
+		color: #333;
+		text-decoration: none;
+	}
 }
 
