@@ -9,7 +9,7 @@ class Page extends SiteTree {
 	);
 	
 	
-	public static $has_many = array (
+	public static $many_many = array (
 		"SidebarItems" => "SidebarItem"
 	);
 	
@@ -39,19 +39,20 @@ class Page extends SiteTree {
 		
 		$gridFieldConfig = GridFieldConfig_RelationEditor::create();
 		$gridFieldConfig->addComponent(new GridFieldSortableRows('SortOrder'));
+		$gridFieldConfig->addComponent(new GridFieldManyRelationHandler(), 'GridFieldPaginator');
 		$gridField = new GridField("SidebarItems", "Sidebar Items", $this->SidebarItems(), $gridFieldConfig);
 		
 		$f->addFieldToTab("Root.Sidebar", new LabelField("SidebarLabel", "<h2>Add sidebar items below</h2>"));
 		
-		if($this->getParent()){
+	/*	if($this->getParent()){
 		$f->addFieldToTab("Root.Sidebar", new CheckboxField("InheritSidebarItems", "Inherit parent page's sidebar items"));
-		}
-		$f->addFieldToTab("Root.Sidebar", $gridField); // add the grid field to a tab in the CMS	*
+		}*/
+		$f->addFieldToTab("Root.Sidebar", $gridField); // add the grid field to a tab in the CMS	
 		
 		return $f;
 	}
 	
-	public function inheritedSidebarItems(){
+	/*public function inheritedSidebarItems(){
 	
 		$items = array();
 		
@@ -74,7 +75,7 @@ class Page extends SiteTree {
 		
 		return $itemList;
 		
-	}
+	}*/
 	
 	/*public function getAllSidebarItems(){
 	

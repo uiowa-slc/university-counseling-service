@@ -11,9 +11,14 @@
 		
 		public static $has_one = array (
 			"Image" => "Image",
-			"Page" => "Page",
-			
 		);
+		
+		
+		public static $belongs_many_many = array (
+			"Pages" => "Page"
+		
+		);
+		
 		public static $summary_fields = array (
 			"Title"
 		);
