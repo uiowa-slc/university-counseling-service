@@ -13,6 +13,12 @@ class Page extends SiteTree {
 		"SidebarItems" => "SidebarItem"
 	);
 	
+    public static $many_many_extraFields=array(
+        'SidebarItems'=>array(
+            'SortOrder'=>'Int'
+        )
+    );
+	
 	public static $defaults = array (
 	
 		"InheritSidebarItems" => "1",
@@ -52,6 +58,10 @@ class Page extends SiteTree {
 		return $f;
 	}
 	
+	
+    public function SidebarItems() {
+        return $this->getManyManyComponents('SidebarItems')->sort('SortOrder');
+    }
 	/*public function inheritedSidebarItems(){
 	
 		$items = array();

@@ -5,7 +5,6 @@
 		public static $db = array(
 			"Title" => "Text",
 			"Content" => "HTMLText",
-			"SortOrder" => "Int"
 
 		);
 		
@@ -16,6 +15,13 @@
 		
 		public static $belongs_many_many = array (
 			"Pages" => "Page"
+		
+		);
+		
+		public static $many_many_extraFields = array (
+		'Pages'=>array(
+            'SortOrder'=>'Int'
+            )
 		
 		);
 		
