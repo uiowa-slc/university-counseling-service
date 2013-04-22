@@ -7,19 +7,36 @@
             	<% loop StaffTeams %>
                         
             	     <h2 class="staff-title">$Title</h2>
-                       <ul class="staff-list clearfix">
-            		<% loop $StaffPages %>
-                              <li>
-                                    <a href="$Link" class="staff-link">
-                                          <% if $Photo %><img src="$Photo.SetWidth(235).URL" alt="$FirstName $LastName"><% end_if %>
-                                          <span class="staff-name">$FirstName $LastName</span>
-                                    </a>
-                              </li>
-            		<% end_loop %>
-                        </ul>
                         <% if $Title == "Practicum Doctoral Trainees" %>
-                              <p>test</p>
+                              <ul class="clearfix">
+                              <% loop $StaffPages %>
+                                    <li>
+                                          <a href="$Link" class="staff-link">
+                                                <% if $Photo %><img src="$Photo.SetWidth(350).URL" alt="$FirstName $LastName" class="staff-img"><% end_if %>
+                                          </a>
+                                          <p><a href="$Link">$FirstName $LastName</a>
+                                                <% if $Position %><small class="staff-position">$Position</small></a><% end_if %>
+                                          </p>
+                                          </a>
+                                    </li>
+                              <% end_loop %>
+                              </ul>
+                        <% else %>
+                              <ul class="staff-list clearfix">
+                              <% loop $StaffPages %>
+                                    <li>
+                                          <a href="$Link" class="staff-link">
+                                                <% if $Photo %><img src="$Photo.SetWidth(350).URL" alt="$FirstName $LastName" class="staff-img"><% end_if %>
+                                          </a>
+                                          <p><a href="$Link">$FirstName $LastName</a>
+                                                <% if $Position %><small class="staff-position">$Position</small></a><% end_if %>
+                                          </p>
+                                          </a>
+                                    </li>
+                              <% end_loop %>
+                              </ul>
                         <% end_if %>
+                        
             	<% end_loop %>
             	
             </section>
