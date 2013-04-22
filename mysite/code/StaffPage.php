@@ -4,6 +4,7 @@ class StaffPage extends Page {
 	public static $db = array(
 		"FirstName" => "Text",
 		"LastName" => "Text",
+		"Position" => "Text",
 	
 	);
 
@@ -20,6 +21,7 @@ class StaffPage extends Page {
 
 		$fields->addFieldToTab("Root.Main", new TextField("FirstName", "First Name"));
 		$fields->addFieldToTab("Root.Main", new TextField("LastName", "Last Name"));
+		$fields->addFieldToTab("Root.Main", new TextField("Position", "Position"));
 		
 		$fields->addFieldToTab("Root.Main", new DropdownField("TeamID", 'Team <a href="admin/pages/edit/show/14" target="_blank">(Manage Teams)</a>', StaffTeam::get()->map('ID', 'Name')));
 		
