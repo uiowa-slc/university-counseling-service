@@ -44,8 +44,9 @@ class Page extends SiteTree {
 		$f = parent::getCMSFields();
 		
 		$gridFieldConfig = GridFieldConfig_RelationEditor::create();
-		$gridFieldConfig->addComponent(new GridFieldSortableRows('SortOrder'));
 		$gridFieldConfig->addComponent(new GridFieldManyRelationHandler(), 'GridFieldPaginator');
+		//$gridFieldConfig->addComponent(new GridFieldSortableRows('SortOrder'));
+
 		$gridField = new GridField("SidebarItems", "Sidebar Items", $this->SidebarItems(), $gridFieldConfig);
 		
 		$f->addFieldToTab("Root.Sidebar", new LabelField("SidebarLabel", "<h2>Add sidebar items below</h2>"));

@@ -5,7 +5,7 @@
 		public static $db = array(
 			"Title" => "Text",
 			"Content" => "HTMLText",
-
+			
 		);
 		
 		public static $has_one = array (
@@ -18,22 +18,20 @@
 		
 		);
 		
-		public static $many_many_extraFields = array (
-		'Pages'=>array(
-            'SortOrder'=>'Int'
-            )
-		
-		);
 		
 		public static $summary_fields = array (
-			"Title"
+			"Title",
+		//	'SortOrder'
+	
 		);
-		public static $default_sort = "SortOrder";
+		
 		
 		function getCMSFields() { 
 			$fields = new FieldList(); 
 			
 			$fields->push( new TextField( 'Title', 'Title' ));
+			//$fields->push( new TextField( 'SortOrder', 'SortOrder' ));
+			
 			$fields->push( new HTMLEditorField( 'Content', 'Content' ));
 			$fields->push( new UploadField( 'Image', 'Image' ));
 
