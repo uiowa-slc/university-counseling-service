@@ -18,6 +18,8 @@ class Page extends SiteTree {
             'SortOrder'=>'Int'
         )
     );
+    
+    public static $plural_name = "Pages";
 	
 	public static $defaults = array (
 	
@@ -45,9 +47,14 @@ class Page extends SiteTree {
 		
 		$gridFieldConfig = GridFieldConfig_RelationEditor::create();
 		$gridFieldConfig->addComponent(new GridFieldManyRelationHandler(), 'GridFieldPaginator');
-		//$gridFieldConfig->addComponent(new GridFieldSortableRows('SortOrder'));
 
 		$gridField = new GridField("SidebarItems", "Sidebar Items", $this->SidebarItems(), $gridFieldConfig);
+		
+		
+		$gridFieldConfig2 = GridFieldConfig_RelationEditor::create();
+		$gridFieldConfig2->addComponent(new GridFieldSortableRows('SortOrder'));
+		
+		$gridField2 = new GridField("CurrentSidebarItems", "Sidebar Items", $this->SidebarItems(), $gridFieldConfig2);
 		
 		$f->addFieldToTab("Root.Sidebar", new LabelField("SidebarLabel", "<h2>Add sidebar items below</h2>"));
 		
@@ -56,6 +63,10 @@ class Page extends SiteTree {
 		}*/
 		$f->addFieldToTab("Root.Sidebar", $gridField); // add the grid field to a tab in the CMS	
 		
+		$f->addFieldToTab("Root.Sidebar", new LabelField("SidebarLabel", "<h2>Sort the Sidebar Items Below</h2>"));
+
+		//$f->addFieldToTab("Root.Sidebar", $gridField2); // add the grid field to a tab in the CMS	
+
 		return $f;
 	}
 	
