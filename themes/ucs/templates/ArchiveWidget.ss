@@ -1,4 +1,4 @@
-<div class="mod">
+<nav class="sec-nav">
 <% if DisplayMode == month %>
 	<ul class="archiveMonths">
 		<% loop Dates %>
@@ -20,4 +20,4 @@
 		<% end_loop %>
 	</ul>
 <% end_if %>
-</div>
+</nav>
