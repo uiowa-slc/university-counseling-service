@@ -1,7 +1,7 @@
 <header class="header clearfix" role="banner">
 	<div class="container">
 		
-		<a href="{$BaseHref}" class="logo"><strong>University Counseling Service</strong></a>
+		<a href="{$BaseHref}" class="logo">University Counseling Service</a>
 		
 		<nav role="navigation" class="nav-main-wrapper clearfix">
 			<h2 class="nav-title"><a href="#">Menu <span></span></a></h2>
