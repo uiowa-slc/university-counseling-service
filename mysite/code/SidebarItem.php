@@ -10,6 +10,7 @@
 		
 		public static $has_one = array (
 			"Image" => "Image",
+			"AssociatedPage" => "SiteTree",
 		);
 		
 		
@@ -31,7 +32,7 @@
 			
 			$fields->push( new TextField( 'Title', 'Title' ));
 			//$fields->push( new TextField( 'SortOrder', 'SortOrder' ));
-			
+			$fields->push( new TreeDropdownField("AssociatedPageID", "Link to this page", "SiteTree"));			
 			$fields->push( new HTMLEditorField( 'Content', 'Content' ));
 			$fields->push( new UploadField( 'Image', 'Image' ));
 			
