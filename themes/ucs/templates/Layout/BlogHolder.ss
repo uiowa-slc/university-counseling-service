@@ -23,7 +23,7 @@
 							<% include BlogSummary %>
 						<% end_loop %>
 					<% else %>
-						<h2><% _t('NOENTRIES', 'There are no blog entries with this tag.') %></h2>
+						<p><% _t('NOENTRIES', 'There are no blog entries with this tag.') %></p>
 					<% end_if %>
 					
 					<% include BlogPagination %>
