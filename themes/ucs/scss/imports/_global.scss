@@ -27,20 +27,34 @@ img.right {margin-left: 1em; margin-bottom: 1em;}
 .uppercase	{text-transform: uppercase;}
 
 .two-col {
-	-webkit-column-count: 2;
-	   -moz-column-count: 2;
-	        column-count: 2;
-	-webkit-column-gap: 1em;
-	   -moz-column-gap: 1em;
-	        column-gap: 1em;
+	@media screen and (min-width: $break-small) {
+		-webkit-column-count: 2;
+		   -moz-column-count: 2;
+		        column-count: 2;
+		-webkit-column-gap: 1em;
+		   -moz-column-gap: 1em;
+		        column-gap: 1em;
+	}
 }
 .three-col {
-	-webkit-column-count: 3;
-	   -moz-column-count: 3;
-	        column-count: 3;
-	-webkit-column-gap: 1em;
-	   -moz-column-gap: 1em;
-	        column-gap: 1em;
+	@media screen and (min-width: $break-small) {
+		-webkit-column-count: 3;
+		   -moz-column-count: 3;
+		        column-count: 3;
+		-webkit-column-gap: 1em;
+		   -moz-column-gap: 1em;
+		        column-gap: 1em;
+	}
+}
+.four-col {
+	@media screen and (min-width: $break-small) {
+		-webkit-column-count: 4;
+		   -moz-column-count: 4;
+		        column-count: 4;
+		-webkit-column-gap: 1em;
+		   -moz-column-gap: 1em;
+		        column-gap: 1em;
+	}
 }
 
 .ir { background-color: transparent; border: 0; overflow: hidden; /* IE 6/7 fallback */ *text-indent: -9999px;}
