@@ -3,9 +3,11 @@
 		<h3 class="section-title"><% if $LinkOrCurrent = "current" %>$MenuTitle<% else %><a href="$Link">$MenuTitle</a><% end_if %></h3>
 	<% end_with %>
 <% end_if %>
+
+<% if Menu(2) %>
 <nav class="sec-nav">
 	<ul>
-		<% if Menu(2) %>
+		
 			<% loop Menu(2) %>
 				<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>><a href="$Link">$MenuTitle</a>
 				
@@ -34,9 +36,10 @@
 				
 				</li>
 			<% end_loop %>
-		<% end_if %>
+		
 	</ul>
 </nav>
+<% end_if %>
 
 <aside>
 	<% if SidebarItems %>
