@@ -1,2 +1,2 @@
-student-legal-services
-======================
+division-starter-kit
+====================
