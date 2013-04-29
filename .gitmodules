@@ -1,3 +1,6 @@
 [submodule "spamprotection"]
 	path = spamprotection
 	url = git://github.com/silverstripe/silverstripe-spamprotection.git
+[submodule "userforms"]
+	path = userforms
+	url = git://github.com/silverstripe/silverstripe-userforms.git
