@@ -1,9 +1,0 @@
-[submodule "userforms"]
-	path = userforms
-	url = git://github.com/silverstripe/silverstripe-userforms.git
-[submodule "recaptcha"]
-	path = recaptcha
-	url = git://github.com/chillu/silverstripe-recaptcha.git
-[submodule "spamprotection"]
-	path = spamprotection
-	url = git://github.com/silverstripe/silverstripe-spamprotection.git
