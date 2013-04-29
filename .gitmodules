@@ -10,3 +10,6 @@
 [submodule "blog"]
 	path = blog
 	url = git://github.com/silverstripe/silverstripe-blog.git
+[submodule "GridFieldBulkEditingTools"]
+	path = GridFieldBulkEditingTools
+	url = git://github.com/colymba/GridFieldBulkEditingTools.git
