@@ -1,0 +1,3 @@
+[submodule "spamprotection"]
+	path = spamprotection
+	url = git://github.com/silverstripe/silverstripe-spamprotection.git
