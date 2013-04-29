@@ -13,3 +13,18 @@
 [submodule "GridFieldBulkEditingTools"]
 	path = GridFieldBulkEditingTools
 	url = git://github.com/colymba/GridFieldBulkEditingTools.git
+[submodule "SortableGridField"]
+	path = SortableGridField
+	url = git://github.com/UndefinedOffset/SortableGridField.git
+[submodule "EventCalendar"]
+	path = EventCalendar
+	url = git://github.com/unclecheese/EventCalendar.git
+[submodule "widgets"]
+	path = widgets
+	url = git://github.com/silverstripe/silverstripe-widgets.git
+[submodule "GridFieldRelationHandler"]
+	path = GridFieldRelationHandler
+	url = git://github.com/simonwelsh/silverstripe-GridFieldRelationHandler.git
+[submodule "division-bar"]
+	path = division-bar
+	url = git://github.com/StudentLifeMarketingAndDesign/division-bar.git
