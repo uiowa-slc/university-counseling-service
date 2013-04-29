@@ -4,3 +4,6 @@
 [submodule "userforms"]
 	path = userforms
 	url = git://github.com/silverstripe/silverstripe-userforms.git
+[submodule "recaptcha"]
+	path = recaptcha
+	url = git://github.com/chillu/silverstripe-recaptcha.git
