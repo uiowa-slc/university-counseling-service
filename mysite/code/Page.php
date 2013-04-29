@@ -1,6 +1,6 @@
 <?php
 class Page extends SiteTree {
-
+/* Testing a merge */
 	public static $db = array(
 		"InheritSidebarItems" => "Boolean"
 	);
