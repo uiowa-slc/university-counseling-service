@@ -1,4 +1,4 @@
-/* /scss/imports/forms.scss
+/* css/scss/imports/forms.scss
 ========================================================================== */
 form {
     margin: 0 0 1em;
@@ -18,14 +18,13 @@ textarea {
 label {
     display: block;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 select,
 textarea,
 input.text {
     display: inline-block;
     padding: 4px 6px;
-    margin-bottom: 9px;
     font-size: 14px;
     line-height: 20px;
     color: #555555;
@@ -145,7 +144,9 @@ textarea,
     cursor: pointer;
     border-radius: 3px;
 }
-
+.field {
+    margin-bottom: 10px;
+}
 .checkboxset, .optionset {
     list-style: none;
     margin: 0 0 9px 0;
@@ -158,4 +159,8 @@ textarea,
     display: inline;
     font-weight: normal;
 }
-
+.message.required {
+    color: #f00;
+    display: block;
+    margin-bottom: 5px;
+}
