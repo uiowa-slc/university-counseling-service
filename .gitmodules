@@ -7,6 +7,3 @@
 [submodule "userforms"]
 	path = userforms
 	url = git://github.com/silverstripe/silverstripe-userforms.git
-[submodule "themes/csil"]
-	path = themes/csil
-	url = git://github.com/StudentLifeMarketingAndDesign/csil.git
