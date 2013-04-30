@@ -1,1 +1,36 @@
-
+[submodule "spamprotection"]
+	path = spamprotection
+	url = git://github.com/silverstripe/silverstripe-spamprotection.git
+[submodule "recaptcha"]
+	path = recaptcha
+	url = git://github.com/chillu/silverstripe-recaptcha.git
+[submodule "userforms"]
+	path = userforms
+	url = git://github.com/silverstripe/silverstripe-userforms.git
+[submodule "blog"]
+	path = blog
+	url = git://github.com/silverstripe/silverstripe-blog.git
+[submodule "GridFieldBulkEditingTools"]
+	path = GridFieldBulkEditingTools
+	url = git://github.com/colymba/GridFieldBulkEditingTools.git
+[submodule "SortableGridField"]
+	path = SortableGridField
+	url = git://github.com/UndefinedOffset/SortableGridField.git
+[submodule "EventCalendar"]
+	path = EventCalendar
+	url = git://github.com/unclecheese/EventCalendar.git
+[submodule "widgets"]
+	path = widgets
+	url = git://github.com/silverstripe/silverstripe-widgets.git
+[submodule "GridFieldRelationHandler"]
+	path = GridFieldRelationHandler
+	url = git://github.com/simonwelsh/silverstripe-GridFieldRelationHandler.git
+[submodule "division-bar"]
+	path = division-bar
+	url = git://github.com/StudentLifeMarketingAndDesign/division-bar.git
+[submodule "cms"]
+	path = cms
+	url = git://github.com/silverstripe/silverstripe-cms.git
+[submodule "framework"]
+	path = framework
+	url = git://github.com/silverstripe/sapphire.git
