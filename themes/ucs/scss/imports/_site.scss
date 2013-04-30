@@ -242,23 +242,38 @@ aside .mod {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	text-align: justify;
+}
+.staff-list:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
 }
 .staff-list li {
+	margin-bottom: 1em;
+	vertical-align: top;
+	text-align: left;
 	@media screen and (min-width: $break-small) {
-		float: left;
-		margin: 0 1% 2em 1%;
+		display: inline-block;
 		width: 48%;
 	}
 	@media screen and (min-width: $break-medium) {
-		margin: 0 1% 1em 1%;
-		min-height: 215px;
+		width: 23%;
+	}
+}
+.staff-list .filler {
+	height: 0;
+	margin: 0;
+	@media screen and (min-width: $break-small) {
+		width: 48%;
+	}
+	@media screen and (min-width: $break-medium) {
 		width: 23%;
 	}
 }
 .staff-img {
 	width: 100%;
 }
-
 .staff-link {
 	display: block;
 	position: relative;

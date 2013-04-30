@@ -12,24 +12,27 @@
                               <% loop $StaffPages %>
                                     <li>
                                           <a href="$Link">$FirstName $LastName</a>
-                                                <% if $Position %><small class="staff-position">$Position</small></a><% end_if %>
-                                          </a>
+                                          <% if $Position %><small class="staff-position">$Position</small><% end_if %>
                                     </li>
                               <% end_loop %>
                               </ul>
                         <% else %>
-                              <ul class="staff-list clearfix">
+                              <ul class="staff-list">
                               <% loop $StaffPages %>
                                     <li>
                                           <a href="$Link" class="staff-link">
-                                                <% if $Photo %><img src="$Photo.SetWidth(350).URL" alt="$FirstName $LastName" class="staff-img"><% end_if %>
+                                                <% if $Photo %>
+                                                      <img src="$Photo.SetWidth(350).URL" alt="$FirstName $LastName" class="staff-img">
+                                                <% end_if %>
                                           </a>
-                                          <p><a href="$Link">$FirstName $LastName</a>
-                                                <% if $Position %><small class="staff-position">$Position</small></a><% end_if %>
+                                          <p>
+                                                <a href="$Link">$FirstName $LastName</a>
+                                                <% if $Position %><small class="staff-position">$Position</small><% end_if %>
                                           </p>
-                                          </a>
                                     </li>
                               <% end_loop %>
+                                    <li class="filler"></li>
+                                    <li class="filler"></li>
                               </ul>
                         <% end_if %>
                         
