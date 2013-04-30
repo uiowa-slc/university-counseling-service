@@ -1,5 +1,5 @@
 <?php
-class SelfHelpTopic extends BlogEntry {
+class Topic extends BlogEntry {
 
 	public static $db = array(
 	);
@@ -11,11 +11,10 @@ class SelfHelpTopic extends BlogEntry {
 	public static $has_many = array(
 	);
 	
-	static $singular_name = 'Self Help Topic';
+	static $singular_name = 'Topic';
 	
-	static $plural_name = 'Self Help Topics';
+	static $plural_name = 'Topics';
 
-	public static $allowed_children = array("SelfHelpTopic");
 	
 	public function getCMSFields(){
 		$f = parent::getCMSFields();
@@ -29,7 +28,7 @@ class SelfHelpTopic extends BlogEntry {
 		return $f;
 	}
 }
-class SelfHelpTopic_Controller extends BlogEntry_Controller {
+class Topic_Controller extends BlogEntry_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
