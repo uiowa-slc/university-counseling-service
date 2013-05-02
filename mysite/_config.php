@@ -25,7 +25,7 @@ FulltextSearchable::enable();
 // Enable nested URLs for this site (e.g. page/sub-page/)
 if (class_exists('SiteTree')) SiteTree::enable_nested_urls();
 
-Director::set_environment_type("dev");
+Director::set_environment_type("test");
 
 // add a button to remove formatting
 HtmlEditorConfig::get('cms')->insertButtonsBefore(
