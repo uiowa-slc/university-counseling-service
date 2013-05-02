@@ -1,7 +1,7 @@
     <div class="hero">
         <div class="container">
             <div class="hero-text">
-                <h2 class="blocktext">We offer a variety of counseling services, outreach, and training for U.of Iowa students and staff.</h2>
+                <h2 class="blocktext">We offer a variety of counseling services, outreach, and training for U.of Iowa students and staff. Test</h2>
                 <ul>
                     <li><a href="services/counseling">Counseling</a></li>
                     <li><a href="services/outreach">Outreach</a></li>
