@@ -239,6 +239,7 @@ aside .mod {
 	clear: both;
 }
 .staff-list {
+	font-size: 0.1px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -250,6 +251,7 @@ aside .mod {
 	width: 100%;
 }
 .staff-list li {
+	@include rem(15);
 	margin-bottom: 1em;
 	vertical-align: top;
 	text-align: left;
@@ -276,6 +278,7 @@ aside .mod {
 }
 .staff-link {
 	display: block;
+	margin-bottom: .6667em;
 	position: relative;
 	transition: all .2s ease-in-out;
 }
@@ -291,6 +294,9 @@ aside .mod {
 }
 .staff-position {
 	display: block;
+}
+.staff-name {
+	margin: 0;
 }
 
 
@@ -344,7 +350,7 @@ aside .mod {
 	-moz-box-shadow: inset 0 1px 0 #2e2e2e;
 	box-shadow: inset 0 1px 0 #2e2e2e;
 	color: #eee;
-	padding: 2em 0 1em;
+	padding: 3em 0 1em;
 }
 .footer p, .footer ul {
 	@include rem(11);
