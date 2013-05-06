@@ -266,12 +266,6 @@ aside .mod {
 .staff-list .filler {
 	height: 0;
 	margin: 0;
-	@media screen and (min-width: $break-small) {
-		width: 48%;
-	}
-	@media screen and (min-width: $break-medium) {
-		width: 23%;
-	}
 }
 .staff-img {
 	width: 100%;
