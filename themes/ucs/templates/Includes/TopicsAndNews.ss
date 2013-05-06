@@ -2,7 +2,7 @@
             <div class="container">
                 <div class="row-fluid">
                     <div class="span6 mod">
-                        <h3 class="mod-title">Self-Help Topics</h3>
+                        <h3 class="mod-title">Self-Help Articles</h3>
                         <ul class="unstyled two-col">
                         	<% with Page("self-help") %>
 	                        	<% loop $Entries('8') %>
