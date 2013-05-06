@@ -57,7 +57,7 @@ body {
 	@media screen and (min-width: $break-medium) {
 		border-right: 1px solid #ddd;
 		padding-right: 1.5em;
-		width: 70%;
+		width: 72%;
 	}
 	
 }
@@ -65,7 +65,7 @@ body {
 	@media screen and (min-width: $break-medium) {
 		border-left: 1px solid #ddd;
 		margin-left: -1px;
-		width: 30%;
+		width: 28%;
 	}
 }
 .padding {padding: 3em 0;}
@@ -81,7 +81,7 @@ body {
 	color: #222;
 	display: block;
 	font-family: "proxima-nova-condensed",sans-serif;
-	@include rem(33);
+	@include rem(29);
 	font-weight: 600;
 	letter-spacing: 1px;
 	line-height: 1.1;
@@ -99,6 +99,11 @@ body {
 	@media screen and (min-width: $break-xlarge) {
 		@include rem(43);
 		margin: 0.6em 0 .3em 0;
+	}
+}
+.rwd-break {
+	@media screen and (min-width: 630px) {
+		display: none;
 	}
 }
 
@@ -212,7 +217,6 @@ body {
 	border: none;
 	color: #fff;
 	display: inline-block;
-	@include rem(19);
 	font-weight: 300;
 	margin: 0;
 	padding: 10px;
@@ -220,7 +224,6 @@ body {
 	bottom: 20px;
 	left: 0;
 	z-index: 30;
-	xtext-transform: none;
 }
 
 aside .mod {
@@ -286,6 +289,7 @@ aside .mod {
 .staff-link:hover:before {
 	border: 4px solid $yellow;
 }
+.staff-name {margin: 0;}
 .staff-position {
 	display: block;
 }

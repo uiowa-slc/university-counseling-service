@@ -6,14 +6,16 @@
             	$Content
             	<% loop StaffTeams %>
                         
-            	      <h2 class="staff-title">$Title</h2>
+            	     <h2 class="staff-title">$Title</h2>
+
                         <ul class="staff-list">
                         <% loop $StaffPages %>
                               <li>
                                     <% if $Photo %>
-                                          <a href="$Link" class="staff-link">
-                                                <img src="$Photo.SetWidth(350).URL" alt="$FirstName $LastName" class="staff-img">
-                                          </a>
+                                    <a href="$Link" class="staff-link">
+                                          
+                                          <img src="$Photo.SetWidth(350).URL" alt="$FirstName $LastName" class="staff-img">
+                                    </a>
                                     <% end_if %>
                                     <p class="staff-name">
                                           <a href="$Link">$FirstName $LastName</a>
