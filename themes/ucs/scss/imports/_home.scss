@@ -1,8 +1,8 @@
 /* Home Hero
 ========================================================================== */
 .hero {
-	background: #0a1a29 url(../images/hero_image.jpg) no-repeat center top;
-	xborder-bottom: 5px solid $yellow;
+	background: #000 url(../images/hero-image.jpg) no-repeat center top;
+	border-bottom: 5px solid $yellow;
 	height: 660px;
 }
 .hero .container {height: inherit;}
