@@ -1,16 +1,23 @@
 /* Home Hero
 ========================================================================== */
 .hero {
-	background: #000 url(../images/hero-image.jpg) no-repeat center top;
+	@media screen and (min-width: $break-medium) {
+		background: #000 url(../images/hero-image.jpg) no-repeat center top;	
+	}
 	border-bottom: 5px solid $yellow;
 	height: 660px;
+	position: relative;
 }
 .hero .container {height: inherit;}
 .hero-text {
 	position: absolute;
 	left: 0;
 	bottom: 4em;
-	width: 70%;
+	max-width: 70%;
+	margin-right: 300px;
+	@media screen and (min-width: $break-medium) {
+		left: 1em;
+	}
 }
 .blocktext {
 	background: rgba(0,0,0,.8);
@@ -28,7 +35,7 @@
 }
 .hero-text li {
 	float: left;
-	margin-right: 10px;
+	margin: 0 10px 10px 0;
 }
 .hero-text li a {
 	background: $yellow;
@@ -51,6 +58,37 @@
 	&:after {
 		content: (' \2192');
 	}
+}
+
+/* Hero Featured Content
+========================================================================== */
+.hero-article-wrapper {
+	background: #fff;
+	padding: 10px;
+	position: absolute;
+	right: 1em;
+	top: 10%;
+	width: 280px;
+}
+.hero-article img {
+	margin-bottom: .667em;
+}
+.hero-title {
+	@include rem(20);
+	margin: 0 0 .2em;
+}
+.hero-content {
+	@include rem(13);
+	line-height: 1.4;
+	margin-top: 0;
+}
+.hero-link {
+	display: block;
+	background: #000;
+	color: #fff;
+	padding: 2px 7px;
+	float: right;
+	@include rem(13); 
 }
 
 /* Home Highlights
