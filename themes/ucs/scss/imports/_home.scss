@@ -5,12 +5,13 @@
 	position: relative;
 	padding: 2em 0;
 	@media screen and (min-width: $break-small) {
-		background: #000 url(../images/hero-image.jpg) no-repeat center top;
+		background: #000 url(../images/hero-image-md.jpg) no-repeat center top;
 		padding: 4em 0;
 	}
 	@media screen and (min-width: $break-medium) {
+		background: #000 url(../images/hero-image.jpg) no-repeat center top;
 		padding: 0;
-		height: 660px;
+		height: 665px;
 	}
 }
 .hero .container {
@@ -49,6 +50,9 @@
 		background: rgba(0,0,0,.8);
 		color: #fff;
 		display: inline;
+		@include rem(36);
+	}
+	@media screen and (min-width: $break-medium) {
 		@include rem(39);
 	}
 }
@@ -69,7 +73,7 @@
 	color: #fff;
 	display: block;
 	font-family: $heading-font;
-	@include rem(19);
+	@include rem(21);
 	font-weight: 600;
 	letter-spacing: .05em;
 	padding: 5px;
@@ -84,9 +88,6 @@
 	}
 	&:after {
 		content: (' \2192');
-	}
-	@media screen and (min-width: $break-medium) {
-		@include rem(21);
 	}
 }
 .hr {
@@ -147,11 +148,10 @@
 	}
 }
 .hero-content {
-	
-	line-height: 1.4;
+	line-height: 1.5;
 	margin-top: 0;
 	@media screen and (min-width: $break-small) {
-		@include rem(13);
+		@include rem(14);
 	}
 }
 .hero-link {
