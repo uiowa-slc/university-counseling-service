@@ -1,32 +1,56 @@
 /* Home Hero
 ========================================================================== */
 .hero {
-	@media screen and (min-width: $break-medium) {
-		background: #000 url(../images/hero-image.jpg) no-repeat center top;	
-	}
 	border-bottom: 5px solid $yellow;
-	height: 660px;
 	position: relative;
-}
-.hero .container {height: inherit;}
-.hero-text {
-	position: absolute;
-	left: 0;
-	bottom: 4em;
-	max-width: 70%;
-	margin-right: 300px;
+	padding: 2em 0;
+	@media screen and (min-width: $break-small) {
+		background: #000 url(../images/hero-image.jpg) no-repeat center top;
+		padding: 4em 0;
+	}
 	@media screen and (min-width: $break-medium) {
+		padding: 0;
+		height: 660px;
+	}
+}
+.hero .container {
+	height: inherit;
+	position: relative;
+	@media screen and (min-width: $break-medium) {
+		text-align: right;
+	}
+}
+.hero .container:before {
+	@media screen and (min-width: $break-medium) {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+		margin-right: -0.25em;
+	}
+}
+.hero-text {	
+	@media screen and (min-width: $break-medium) {
+		position: absolute;
 		left: 1em;
+		bottom: 4em;
+		max-width: 70%;
+		margin-right: 300px;
+		text-align: left;
 	}
 }
 .blocktext {
-	background: rgba(0,0,0,.8);
-	color: #fff;
-	display: inline;
-	@include rem(39);
+	margin-top: 0;
+	@include rem(30);
 	font-weight: 600;
 	line-height: 1.35;
 	padding: 1px;
+	@media screen and (min-width: $break-small) {
+		background: rgba(0,0,0,.8);
+		color: #fff;
+		display: inline;
+		@include rem(39);
+	}
 }
 .hero-text ul {
 	list-style: none;
@@ -34,18 +58,21 @@
 	padding: 0;
 }
 .hero-text li {
-	float: left;
+	
 	margin: 0 10px 10px 0;
+	@media screen and (min-width: $break-small) {
+		float: left;
+	}
 }
 .hero-text li a {
 	background: $yellow;
 	color: #fff;
 	display: block;
 	font-family: $heading-font;
-	@include rem(21);
+	@include rem(19);
 	font-weight: 600;
 	letter-spacing: .05em;
-	padding: 6px 10px;
+	padding: 5px;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 	text-transform: uppercase;
 	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.3);
@@ -58,37 +85,86 @@
 	&:after {
 		content: (' \2192');
 	}
+	@media screen and (min-width: $break-medium) {
+		@include rem(21);
+	}
+}
+.hr {
+	@media screen and (min-width: $break-small) {
+		display: none;
+	}
+	@media screen and (min-width: $break-medium) {
+		display: block;
+	}
 }
 
 /* Hero Featured Content
 ========================================================================== */
 .hero-article-wrapper {
-	background: #fff;
-	padding: 10px;
-	position: absolute;
-	right: 1em;
-	top: 10%;
-	width: 280px;
+	margin-bottom: 1em;
+	overflow: hidden;
+	@media screen and (min-width: $break-medium) {
+		width: 280px;
+		margin-bottom: 0;
+		display: inline-block;
+		background: #fff;
+		padding: 10px;
+		text-align: left;
+		vertical-align: middle;
+	}
+}
+.hero-article {
+	margin-bottom: 2em;
+	width: 100%;
+	@media screen and (min-width: $break-small) {
+		float: left;
+		margin: 0;
+		width: 49%;
+		background: #fff;
+		padding: 10px;
+	}
+	@media screen and (min-width: $break-medium) {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+}
+.hero-article:first-child {
+	margin-right: 2%;
 }
 .hero-article img {
-	margin-bottom: .667em;
+	display: none;
+	@media screen and (min-width: $break-medium) {
+		display: block;
+		margin-bottom: .667em;
+	}
 }
 .hero-title {
 	@include rem(20);
 	margin: 0 0 .2em;
+	& a {
+		color: #333;
+	}
 }
 .hero-content {
-	@include rem(13);
+	
 	line-height: 1.4;
 	margin-top: 0;
+	@media screen and (min-width: $break-small) {
+		@include rem(13);
+	}
 }
 .hero-link {
+	xborder: 3px solid #000;
+	color: #fff;
 	display: block;
 	background: #000;
-	color: #fff;
-	padding: 2px 7px;
-	float: right;
-	@include rem(13); 
+	padding: 5px;
+	text-align: center;
+	@media screen and (min-width: $break-small) {
+		float: right;
+		@include rem(13);
+	}
 }
 
 /* Home Highlights
