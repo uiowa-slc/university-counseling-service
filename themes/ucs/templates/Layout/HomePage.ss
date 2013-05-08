@@ -9,8 +9,8 @@
 				</div>
 				<hr class="hr">
 				<div class="hero-article clearfix">
-					<h3 class="hero-title"><a href="#">Big 10 Counseling Centers Conference 2013</a></h3>
-					<p class="hero-content">The University of Iowa's University Counseling Service is pleased to announce the 2013 Annual Big Ten Counseling Centers Conference.</p>
+					<h3 class="hero-title"><a href="/ucs/services/counseling/group-counseling-and-psychotherapy/group-programs-for-2013/">Groups Programs - Spring 2013</a></h3>
+					<p class="hero-content">View our complete list of group sessions available for free to University of Iowa students. Enroll by calling (319) 335-7294.</p>
 					<a href="#" class="hero-link">Read More</a>
 				</div>
 	        </div>
