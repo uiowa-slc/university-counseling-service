@@ -1,8 +1,8 @@
 <div class="main-bg"></div>
 <section class="container content-wrapper clearfix">
     $Breadcrumbs
-    <h1>$Title</h1>
     <section class="main-content">
+    	<h1>$Title</h1>
     	<% if $Query %>
     		<p class="searchQuery">You searched for &quot;{$Query}&quot;</p>
     	<% end_if %>
