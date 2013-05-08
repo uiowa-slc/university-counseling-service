@@ -151,7 +151,7 @@
 	line-height: 1.5;
 	margin-top: 0;
 	@media screen and (min-width: $break-small) {
-		@include rem(13);
+		@include rem(14);
 	}
 }
 .hero-link {
@@ -206,7 +206,8 @@
 	width: 100%;
 }
 .module .inner {
-	font-size: 13px;
+	@include rem(14);
+	line-height: 1.5;
 	padding: 1em;
 }
 .module h3 {
