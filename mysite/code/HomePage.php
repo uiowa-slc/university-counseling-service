@@ -23,7 +23,7 @@ class HomePage extends Page {
 		$gridFieldConfig->addComponent(new GridFieldSortableRows('SortOrder'));
 
     /* Remove  some abilities if you aren't an admin. */
-    if(Permission::check('ADMIN')){
+    if(!Permission::check('ADMIN')){
       $gridFieldConfig->removeComponentsByType('GridFieldAddNewButton');
       $gridFieldConfig->removeComponentsByType('GridFieldDeleteAction');
 
