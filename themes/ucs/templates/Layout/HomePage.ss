@@ -1,19 +1,26 @@
     <div class="hero">
         <div class="container clearfix">
+
+        <% if HomePageHeroFeatures.limit(2) %>
             <div class="hero-article-wrapper">
-				<div class="hero-article clearfix">
-					<img src="{$ThemeDir}/images/article-img.jpg" alt="">
-					<h3 class="hero-title"><a href="#">How to Prepare for Exams</a></h3>
-					<p class="hero-content">Whether the examination is to be the essay type or the objective type, there are certain common practices employed by the good students which may be helpful to you.</p>
-					<a href="#" class="hero-link">Read More</a>
-				</div>
-				<hr class="hr">
-				<div class="hero-article clearfix">
-					<h3 class="hero-title"><a href="/ucs/services/counseling/group-counseling-and-psychotherapy/group-programs-for-2013/">Groups Programs - Spring 2013</a></h3>
-					<p class="hero-content">View our complete list of group sessions available for free to University of Iowa students. Enroll by calling (319) 335-7294.</p>
-					<a href="#" class="hero-link">Read More</a>
-				</div>
-	        </div>
+
+              <% loop HomePageHeroFeatures %>
+                <div class="hero-article clearfix">
+                  <% if $Image %>
+                    <a href="$AssociatedPage.Link"><img src="$Image.URL" alt=""></a>
+                  <% end_if %>
+                  <h3 class="hero-title"><a href="$AssociatedPage.Link">$Title</a></h3>
+                  <p class="hero-content">$Content</p>
+                  <a href="$AssociatedPage.Link" class="hero-link">Read More</a>
+                </div>
+                <% if not $Last %>
+                  <hr class="hr">
+                <% end_if %>
+              <% end_loop %>
+
+
+	          </div>
+         <% end_if %>
 	        <div class="hero-text">
                 <h2 class="blocktext">We offer a variety of counseling services, outreach, and training for University of Iowa students and staff.</h2>
                 <ul>
@@ -23,15 +30,15 @@
                 </ul>
             </div>
         </div>
-        
+
     </div>
 	<section class="home-highlights padding">
         <div class="container clearfix">
 	        <% loop HomePageFeatures %>
 	            <div class="module">
 	                <div class="media">
-	                <% if $YouTubeEmbed %>  
-	                	$YouTubeEmbed      
+	                <% if $YouTubeEmbed %>
+	                	$YouTubeEmbed
 	                <% else %>
 	                    <a href="$AssociatedPage.Link">
 	                        <img src="$Image.CroppedImage(350,197).URL" alt="$Title">
@@ -48,4 +55,3 @@
     </section>
 
     <% include TopicsAndNews %>
-    
