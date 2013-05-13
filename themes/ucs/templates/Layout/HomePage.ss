@@ -1,17 +1,21 @@
     <div class="hero">
         <div class="container clearfix">
 
-        <% if HomePageHeroFeatures %>
+        <% if HomePageHeroFeatures.limit(2) %>
             <div class="hero-article-wrapper">
 
               <% loop HomePageHeroFeatures %>
                 <div class="hero-article clearfix">
-                  <a href="$AssociatedPage.Link"><img src="$Image.URL" alt=""></a>
+                  <% if $Image %>
+                    <a href="$AssociatedPage.Link"><img src="$Image.URL" alt=""></a>
+                  <% end_if %>
                   <h3 class="hero-title"><a href="$AssociatedPage.Link">$Title</a></h3>
                   <p class="hero-content">$Content</p>
                   <a href="$AssociatedPage.Link" class="hero-link">Read More</a>
                 </div>
-                <hr class="hr">
+                <% if not $Last %>
+                  <hr class="hr">
+                <% end_if %>
               <% end_loop %>
 
 
