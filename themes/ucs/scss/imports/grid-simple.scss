@@ -1,0 +1,109 @@
+[class*=colgroup] {
+  zoom: 1;
+}
+[class*=colgroup]:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.col {
+  position: relative;
+}
+.col :first-child {
+  margin-top: 0;
+}
+
+/* min-width: 30em max-width: 50em
+========================================================================== */
+@media all and (min-width: 30em) and (max-width: 50em) {
+  [class*=colgroup] .col {
+    float: left;
+    width: 47.5%;
+    margin-left: 5%;
+  }
+  [class*=colgroup] .col:nth-of-type(2n+1),
+  .colspan-2 + .col {
+    clear: left;
+    margin-left: 0;
+  }
+  .colgroup-1 .col {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+  }
+  .colgroup-3 .colspan-2,
+  .colgroup-3 .colspan-2 + .col,
+  .colgroup-3 .col.primary,
+  .colgroup-3 .col.secondary {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+  }
+  .colgroup-3 .col.secondary {
+    margin: 2em 0 0 0;
+  }
+}
+
+/* min-width: 50em
+========================================================================== */
+@media all and (min-width: 50em) {
+  [class*=colgroup] .col {
+    margin-left: 5%;
+    float: left;
+  }
+  [class*=colgroup] .col:first-of-type {
+    margin-left: 0;
+  }
+  .colgroup-4 .col {
+    width: 21.2%;
+  }
+  .colgroup-4 .col:nth-of-type(4n+1) {
+    clear: left;
+    margin-left: 0;
+  }
+  .colgroup-4 .col.colspan-3 {
+    width: 73.8%;
+  }
+  .colgroup-3 .col {
+    width: 30%;
+  }
+  .colgroup-3 .col:nth-of-type(3n+1) {
+    clear: left;
+    margin-left: 0;
+  }
+  .colgroup-3 .col.colspan-2 {
+    width: 64%;
+  }
+  .colgroup-3 .col.middle {
+    margin: 0 auto;
+    float: none;
+  }
+  .colgroup-3 .col.colspan-2 > p {
+    line-height: 1.4;
+    margin-top: 0.7em;
+  }
+  .colgroup-3 .col.colspan-2 > p.leader {
+    line-height: 1.1429;
+    margin-top: 0;
+  }
+  .colgroup-3 .col.primary {
+    float: right;
+  }
+  .colgroup-3 .col.secondary {
+    float: left;
+    margin-left: 0;
+  }
+  .colgroup-2 .col {
+    width: 47.5%;
+  }
+  .colgroup-2 .col:nth-of-type(2n+1) {
+    clear: left;
+    margin-left: 0;
+  }
+  .colgroup-1 .col {
+    width: 100%;
+    margin-left: 0;
+  }
+}
