@@ -122,12 +122,12 @@ body {
 	& a {color: #333;}
 }
 .sec-nav ul {
-	border-top: 1px solid #ddd;
 	list-style: none;
-	margin: 0 0 1em 0;
+	margin: 0;
 	padding: 0;
 }
-.sec-nav li a {
+
+.sec-nav a {
 	border-bottom: 1px solid #ddd;
 	color: #333;
 	display: block;
@@ -141,18 +141,27 @@ body {
 		padding-left: 15px;
 	}
 }
-.sec-nav ul li ul {
-	margin: 0;
-	border: none;
+.first-level {
+	border-top: 1px solid #ddd;
+	margin-bottom: 1em;
 }
-.sec-nav ul li ul li a {
+.first-level > li > a {
+	font-weight: bold;
+}
+.second-level, .third-level {
+	background: #f2f2f2;
+	background: rgba(0,0,0,.05);
+	@include rem(14);
+}
+.second-level a {
 	padding-left: 30px;
 }
 
-.sec-nav ul li ul li ul li a {
+.third-level a {
+	@include rem(13);
 	padding-left: 50px;
 }
-.sec-nav .active>a {
+.sec-nav .active > a {
 	background: #000;
 	color: #fff;
 	position: relative;
@@ -264,7 +273,7 @@ aside .mod {
 	padding: 0;
 	text-align: justify;
 }
-.staff-list:after {
+.staff-list:after { /* http://www.barrelny.com/blog/text-align-justify-and-rwd/ */
 	content: '';
 	display: inline-block;
 	width: 100%;
@@ -293,13 +302,15 @@ aside .mod {
 	display: block;
 	margin-bottom: .5em;
 	position: relative;
-	transition: all .2s ease-in-out;
 }
 .staff-link:before {
 	content: '';
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 }
 .staff-link:hover:before {

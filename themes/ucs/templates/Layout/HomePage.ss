@@ -10,7 +10,7 @@
                     <a href="$AssociatedPage.Link"><img src="$Image.URL" alt=""></a>
                   <% end_if %>
                   <h3 class="hero-title"><a href="$AssociatedPage.Link">$Title</a></h3>
-                  <p class="hero-content">$Content</p>
+                  <div class="hero-content">$Content</div>
                   <a href="$AssociatedPage.Link" class="hero-link">Read More</a>
                 </div>
                 <% if not $Last %>

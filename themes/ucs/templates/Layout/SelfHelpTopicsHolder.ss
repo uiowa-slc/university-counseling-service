@@ -20,15 +20,15 @@
 		<% include BlogPagination %>
     </section>
     <section class="sec-content">
-    	
+    	<!--
     	<% with $SearchForm %>
-    	 <form $FormAttributes>
-            <label>Search</label>
-            <input type="search" placeholder="Search" results="5" name="Search" class="">
-            <input type="submit" class="">
-        </form>
+	    	<form $FormAttributes>
+	            <label>Search</label>
+	            <input type="search" placeholder="Search" results="5" name="Search" class="">
+	            <input type="submit" class="">
+	        </form>
         <% end_with %>
-
+		-->
     	
     	<% include BlogSideBar %>
     </section>
