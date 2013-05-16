@@ -1,4 +1,4 @@
-    <div class="hero">
+<div class="hero">
         <div class="container clearfix">
 
         <% if HomePageHeroFeatures.limit(2) %>
