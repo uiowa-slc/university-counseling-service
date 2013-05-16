@@ -4,18 +4,15 @@
         <% if HomePageHeroFeatures.limit(2) %>
             <div class="hero-article-wrapper">
 
-              <% loop HomePageHeroFeatures %>
+                <% loop HomePageHeroFeatures %>
                 <div class="hero-article clearfix">
-                  <% if $Image %>
-                    <a href="$AssociatedPage.Link"><img src="$Image.URL" alt=""></a>
-                  <% end_if %>
-                  <h3 class="hero-title"><a href="$AssociatedPage.Link">$Title</a></h3>
-                  <div class="hero-content">$Content</div>
-                  <a href="$AssociatedPage.Link" class="hero-link">Read More</a>
+                    <% if $Image %>
+                        <a href="$AssociatedPage.Link"><img src="$Image.URL" alt=""></a>
+                    <% end_if %>
+                    <h3 class="hero-title"><a href="$AssociatedPage.Link">$Title</a></h3>
+                    <div class="hero-content">$Content</div>
+                    <a href="$AssociatedPage.Link" class="hero-link">Read More</a>
                 </div>
-                <% if not $Last %>
-                  <hr class="hr">
-                <% end_if %>
               <% end_loop %>
 
 
