@@ -1,4 +1,5 @@
-    <div class="hero">
+<h2>deployment test</h2>
+<div class="hero">
         <div class="container clearfix">
 
         <% if HomePageHeroFeatures.limit(2) %>
