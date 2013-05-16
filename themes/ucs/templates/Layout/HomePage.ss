@@ -1,4 +1,3 @@
-<h2>another deployment test</h2>
 <div class="hero">
         <div class="container clearfix">
 
