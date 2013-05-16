@@ -415,22 +415,32 @@ aside .mod {
 	margin-top: 0;
 	text-transform: uppercase;
 }
-.footer ul {
-	border-left: 1px solid #000;
-	padding-top: 1em;
+
+.footer-nav {
+	list-style: none;
+	margin: 0;
+	padding: 1em 0 0;
+	@media screen and (min-width: $break-small) {
+		border-left: 1px solid #000;
+	}
 }
-.footer ul:first-child {
+.footer-nav:first-child {
 	padding-top: 0;
 }
-.footer li a {
-	border-left: 1px solid #2e2e2e;
+.footer-nav a {
 	display: block;
-	padding: 5px 0 5px 10px;
-	-webkit-transition: all .2s ease-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 	&:hover {
 		border-left-color: $yellow;
 	}
+	@media screen and (min-width: $break-small) {
+		border-left: 1px solid #2e2e2e;
+		padding: 5px 0 5px 10px;
+	}
 }
+
 .footer .btn {color: #333;}
 .footer hr {
 	border-top-color: #000;

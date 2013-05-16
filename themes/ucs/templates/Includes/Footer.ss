@@ -9,20 +9,20 @@
 			</div>
 			<div class="col-3-8">
 				<div class="colgroup">
-					<div class="col-1-2">
-						<ul class="unstyled">
+					<div class="col-1-2 mobile-half">
+						<ul class="footer-nav">
 							<% loop Menu(1) %>
 								<li><a href="$Link">$MenuTitle</a></li>
 							<% end_loop %>
 						</ul>
 					</div>
-					<div class="col-1-2">
-						<ul class="unstyled">
+					<div class="col-1-2 mobile-half">
+						<ul class="footer-nav">
 							<li><a href="/ucs/information-for/for-parents/">For Parents</a></li>
 							<li><a href="/ucs/information-for/faculty-and-staff">For Faculty</a></li>
 							<li><a href="/ucs/information-for/students">For Students</a></li>
 						</ul>
-						<ul class="unstyled">
+						<ul class="footer-nav">
 							<li><a href="https://www.facebook.com/uiowacounseling" target="_blank"><i class="icon-facebook"></i> Facebook</a></li>
 							<li><a href="https://twitter.com/uiowacounseling" target="_blank"><i class="icon-twitter"></i> Twitter</a></li>
 						</ul>

@@ -403,8 +403,11 @@ aside .mod {
 	color: #eee;
 	padding: 3em 0 1em;
 }
-.footer p, .footer ul {
-	@include rem(11);
+.footer p {
+	@media screen and (min-width: $break-small) {
+		@include rem(11);
+	}
+	
 }
 .footer a {
 	color: #eee;
@@ -412,23 +415,43 @@ aside .mod {
 .footer h4 {
 	color: #eee;
 	font-weight: 300;
-	margin-top: 0;
+	
 	text-transform: uppercase;
+	@media screen and (min-width: $break-small) {
+		margin-top: 0;
+	}
 }
-.footer ul {
-	border-left: 1px solid #000;
-	padding-top: 1em;
+
+.footer-nav {
+	list-style: none;
+	margin: 0;
+	padding: 1em 0 0;
+	@media screen and (min-width: $break-small) {
+		border-left: 1px solid #000;
+	}
 }
-.footer ul:first-child {
+.footer-nav:first-child {
 	padding-top: 0;
 }
-.footer li a {
-	border-left: 1px solid #2e2e2e;
+.footer-nav a {
 	display: block;
-	padding: 5px 0 5px 10px;
-	-webkit-transition: all .2s ease-out;
+	padding: 10px 0;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 	&:hover {
 		border-left-color: $yellow;
+	}
+	@media screen and (min-width: $break-small) {
+		border-left: 1px solid #2e2e2e;
+		@include rem(11);
+		padding: 5px 0 5px 10px;
+	}
+}
+@media only screen and (max-width: $break-small) {
+	.mobile-half {
+		float: left;
+		width: 50%;
 	}
 }
 .footer .btn {color: #333;}
