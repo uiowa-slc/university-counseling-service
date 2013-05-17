@@ -145,9 +145,6 @@ body {
 	border-top: 1px solid #ddd;
 	margin-bottom: 1em;
 }
-.first-level > li > a {
-	font-weight: bold;
-}
 .second-level, .third-level {
 	background: #f2f2f2;
 	background: rgba(0,0,0,.05);
@@ -179,6 +176,9 @@ body {
 			margin-top: -21px;
 		}
 	}
+}
+.tag-nav {
+	border-top: 1px solid #ddd;
 }
 .tag-nav li a {
 	position: relative;
@@ -462,14 +462,14 @@ aside .mod {
 }
 .appt-btn {
 	border: 3px solid #eee;
-	color: #eee;
+	color: #fff;
 	display: block;
 	margin-top: 12px;
 	padding: 5px;
 	text-align: center;
 	&:hover {
-		background: #eee;
-		color: #333;
+		background: #fff;
+		color: #fff;
 		text-decoration: none;
 	}
 }
