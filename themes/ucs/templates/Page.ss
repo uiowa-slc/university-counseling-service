@@ -16,9 +16,12 @@
 	<title>$Title - University of Iowa Counseling Services</title>
 	<script type="text/javascript" src="//use.typekit.net/ivn3muh.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	<!--[if lt IE 9]><script src="js/vendor/html5shiv.js"></script><![endif]-->
+	<!--[if lt IE 9]>
+		<script src="{$ThemeDir}/js/vendor/html5shiv.js"></script>
+		<script src="{$ThemeDir}/js/vendor/respond.src.js"></script>
+
+	<![endif]-->
 	<% require themedCSS(master) %>
-	<!--[if lt IE 9]><script src="js/vendor/respond.min.js"><![endif]-->
 	
 </head>
 
