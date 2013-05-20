@@ -127,7 +127,7 @@
 	-moz-transition: font-size .3s linear;
 	transition: font-size .3s linear;
 	@media screen and (max-width: $break-medium) {
-		text-align: left;
+		text-align: left; /* for internet explorer */
 	}
 	@media screen and (min-width: $break-medium) {
 		border-bottom: none;
