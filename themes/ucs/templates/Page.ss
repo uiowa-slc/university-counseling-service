@@ -16,14 +16,9 @@
 	<title>$Title - University of Iowa Counseling Services</title>
 	<script type="text/javascript" src="//use.typekit.net/ivn3muh.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	<!--[if lt IE 9]>
-		<script src="{$ThemeDir}/js/vendor/html5shiv.js"></script>
-		<script src="{$ThemeDir}/respond/respond.min.js"></script>
-		<link href="http://hulk.imu.uiowa.edu/ucs/themes/ucs/respond/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
-		<link href="{$ThemeDir}/respond/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
-		<script src="{$ThemeDir}/respond/respond.proxy.js"></script>
+	<script src="{$ThemeDir}/js/vendor/html5shiv.js"></script>
+	<script src="{$ThemeDir}/respond/respond.src.js"></script>
 
-	<![endif]-->
 	<% require themedCSS(master) %>
 	
 </head>
