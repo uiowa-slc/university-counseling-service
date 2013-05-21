@@ -12,17 +12,6 @@ body {
 	margin: 0;
 	padding: 0;
 }
-@media only screen and (min-width: 18.75em){
-	body {
-		background: yellow;
-	}
-}
-/*styles for 480px - 620px @ 16px!*/
-@media only screen and (min-width: 30em) and (max-width: 38.75em) {
-	body {
-		background: green;
-	}
-}
 
 /* Division Bar
 ========================================================================== */

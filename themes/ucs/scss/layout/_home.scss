@@ -53,7 +53,7 @@
 		@include rem(36);
 	}
 	@media screen and (min-width: $break-medium) {
-		@include rem(39);
+		@include rem(44);
 	}
 }
 .hero-text ul {
@@ -76,7 +76,7 @@
 	font-weight: 600;
 	letter-spacing: .05em;
 	padding: 5px 10px;
-	text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 	text-transform: uppercase;
 	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.3);
 	-webkit-transition: all .2s ease-out;
@@ -105,7 +105,7 @@
 .hero-article {
 	border-top: 1px solid #ddd;
 	margin-top: 1.7em;
-	padding-top: 1.5em;
+	padding-top: 1em;
 	width: 100%;
 	@media screen and (min-width: $break-small) and (max-width: $break-medium) {
 		border: none;
@@ -137,7 +137,7 @@
 }
 .hero-title {
 	@include rem(20);
-	margin: .2em 0 .2em;
+	margin: .5em 0 .2em;
 	& a {
 		color: #333;
 	}
