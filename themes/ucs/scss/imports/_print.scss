@@ -26,8 +26,11 @@
     .hide-print, .division-topbar {
         display: none;
     }
-    
+
     /* Site Specific */
+    .content-wrapper {
+        min-height: auto;
+    }
     .logo {
         font-size: 40px;
         text-align: left;
