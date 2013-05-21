@@ -1,32 +1,36 @@
 /* Global
 -------------------------------------------*/
-@import "imports/config";
-@import "imports/mixins";
-@import "imports/normalize";
-@import "imports/typography";
-@import "imports/global";
+@import "imports/_config.scss";
+@import "imports/_mixins.scss";
+@import "imports/_normalize.scss";
+@import "imports/_typography.scss";
+@import "imports/_global.scss";
 
 /* Elements
 -------------------------------------------*/
-/*@import "imports/buttons";*/
-@import "imports/font";
-@import "imports/forms";
+/*@import "imports/_buttons.scss";*/
+@import "imports/_font.scss";
+@import "imports/_forms.scss";
 /*@import "imports/_grid.scss";*/
 @import "imports/_grid-simple.scss";
-@import "imports/print";
-@import "imports/tables";
+@import "imports/_tables.scss";
 
 /* Vendor
 -------------------------------------------*/ 
-/*@import "vendor/flexslider";*/
+/*@import "vendor/_flexslider.scss";*/
 
 
 /* Layout
 -------------------------------------------*/ 
-@import "layout/home";
-@import "layout/nav";
+@import "layout/_home.scss";
+@import "layout/_nav.scss";
+@import "layout/_footer.scss";
 
 
 /* Site specific styles
 -------------------------------------------*/
-@import "layout/site";
+@import "layout/_site.scss";
+
+/* Print
+-------------------------------------------*/
+@import "imports/_print.scss";

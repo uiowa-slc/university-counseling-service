@@ -19,7 +19,7 @@
 		
 		<% include BlogPagination %>
     </section>
-    <section class="sec-content">
+    <section class="sec-content hide-print">
     	<!--
     	<% with $SearchForm %>
 	    	<form $FormAttributes>

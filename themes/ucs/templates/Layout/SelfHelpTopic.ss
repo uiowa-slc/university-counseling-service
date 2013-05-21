@@ -20,7 +20,7 @@
 
     </section>
     
-    <section class="sec-content">
+    <section class="sec-content hide-print">
     	<%-- include SideNav --%>
     	<% include BlogSideBar %>
    </section>
