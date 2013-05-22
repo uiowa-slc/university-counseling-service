@@ -16,13 +16,14 @@
 	<title>$Title - University of Iowa Counseling Services</title>
 	<script type="text/javascript" src="//use.typekit.net/ivn3muh.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<link rel="stylesheet" href="{$ThemeDir}/css/master.css" />
+	<link rel="stylesheet" href="{$BaseHref}/division-bar/css/_division-bar.css" />
 	<!--[if lt IE 9]>
 		<script src="{$ThemeDir}/js/vendor/html5shiv.js"></script>
-		<link rel="stylesheet" href="{$ThemeDir}/css/master.css" />
 		<script src="{$ThemeDir}/js/vendor/respond.min.js"></script>
 
 	<![endif]-->
-	<% require themedCSS(master) %>
+	
 	
 </head>
 
@@ -39,7 +40,7 @@
 	<script>window.jQuery || document.write('<script src="{$ThemeDir}/js/vendor/jquery-1.8.0.min.js">\x3C/script>')</script>
 	<script src="{$ThemeDir}/js/plugins-ck.js"></script>
 	<script src="{$ThemeDir}/js/main-ck.js"></script>
-	<script type="text/javascript" src="{$BaseHref}/division-bar/js/division-bar.js"></script>
+	<script type="text/javascript" src="{$BaseHref}division-bar/js/division-bar.js"></script>
 
 	<!-- Google Universal Analytics: change UA-XXXXX-X and test.com.
 	<script>
