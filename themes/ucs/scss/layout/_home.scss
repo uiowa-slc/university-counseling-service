@@ -136,8 +136,7 @@
 	}
 }
 .hero-title {
-	@include rem(20);
-	margin: .5em 0 .2em;
+	margin: .2em 0 .2em;
 	& a {
 		color: #333;
 	}
