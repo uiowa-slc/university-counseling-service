@@ -18,7 +18,7 @@
 						        <ul class="unstyled">
 						        	<% loop $Entries('3') %>
 						        	<li><a href="$Link">$MenuTitle</a>
-						        		<% if $Date %><small>$Date.Format('M. n')</small><% end_if %>
+						        		<% if $Date %><small>$Date.Format('M. j')</small><% end_if %>
 						        	</li>
 						        	<% end_loop %>
 						        	<li><a href="$Link">View all News</a></li>
