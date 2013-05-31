@@ -33,9 +33,7 @@
 						        <h3 class="mod-title">Upcoming Events</h3>
 						        <ul class="unstyled">
 						        	<% loop $Entries('3','event') %>
-						        	<li><a href="$Link">$MenuTitle</a>
-						        		<% if $Date %><small>published on $Date.Format('M. n')</small><% end_if %>
-						        	</li>
+						        	<li><a href="$Link">$MenuTitle</a></li>
 						        	<% end_loop %>
 						        	<li><a href="{$Link}tag/event">View all Events</a></li>
 						        </ul>
