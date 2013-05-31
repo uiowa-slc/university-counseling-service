@@ -7,7 +7,7 @@
 	
 	<meta name="description" content="" /> 
 	<meta name="viewport" content="width=device-width">
-	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="shortcut icon" href="{$ThemeDir}/images/favicon.ico" />
 	
 	<title>$Title - University of Iowa Counseling Services</title>
 	<script type="text/javascript" src="//use.typekit.net/ivn3muh.js"></script>
