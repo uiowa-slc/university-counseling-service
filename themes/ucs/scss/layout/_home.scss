@@ -47,6 +47,7 @@
 	line-height: 1.35;
 	padding: 1px;
 	@media screen and (min-width: $break-small) {
+		background: #000;
 		background: rgba(0,0,0,.8);
 		color: #fff;
 		display: inline;
@@ -199,9 +200,15 @@
 		transition: all .2s ease-out;
 		&:hover {
 			margin-top: -3px;
+			-webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,.3);
+			-moz-box-shadow: 0 3px 3px 0 rgba(0,0,0,.3);
+			-ms-box-shadow: 0 3px 3px 0 rgba(0,0,0,.3);
 			box-shadow: 0 3px 3px 0 rgba(0,0,0,.3);
 		}
 	}
+}
+.lt-ie9 .module:hover {
+	margin-top: 0;
 }
 .module:first-child {
 	margin-left: 0;
