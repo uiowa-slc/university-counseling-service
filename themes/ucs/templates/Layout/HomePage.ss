@@ -21,7 +21,7 @@
 	        <div class="hero-text">
                 <h2 class="blocktext">We offer a variety of counseling services, outreach, and training for University of Iowa students.</h2>
                 <ul>
-                    <li><a href="services/counseling">Counseling</a></li>
+                    <li><a href="services/individual-counseling-and-psychotherapy/">Counseling</a></li>
                     <li><a href="services/outreach">Outreach</a></li>
                     <li><a href="services/training">Training</a></li>
                 </ul>
