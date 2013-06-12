@@ -10,8 +10,6 @@
 	<link rel="shortcut icon" href="{$ThemeDir}/images/favicon.ico" />
 	
 	<title>$Title - University of Iowa Counseling Services</title>
-	<script type="text/javascript" src="//use.typekit.net/ivn3muh.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<link rel="stylesheet" href="{$ThemeDir}/css/master.css" />
 	<link rel="stylesheet" href="{$BaseHref}/division-bar/css/_division-bar.css" />
 	<!--[if lt IE 9]>
@@ -19,8 +17,8 @@
 		<script src="{$ThemeDir}/js/vendor/respond.min.js"></script>
 
 	<![endif]-->
-	
-	
+	<script type="text/javascript" src="//use.typekit.net/ivn3muh.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 
 <body>

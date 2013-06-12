@@ -18,9 +18,9 @@
 					</div>
 					<div class="col-1-2 mobile-half">
 						<ul class="footer-nav">
-							<li><a href="/ucs/information-for/for-parents/">For Parents</a></li>
-							<li><a href="/ucs/information-for/faculty-and-staff">For Faculty</a></li>
-							<li><a href="/ucs/information-for/students">For Students</a></li>
+							<li><a href="/information-for/for-parents/">For Parents</a></li>
+							<li><a href="/information-for/faculty-and-staff">For Faculty</a></li>
+							<li><a href="/information-for/students">For Students</a></li>
 						</ul>
 						<ul class="footer-nav">
 							<li><a href="https://www.facebook.com/uiowacounseling" target="_blank"><i class="icon-facebook"></i> Facebook</a></li>
