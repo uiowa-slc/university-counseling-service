@@ -16,7 +16,7 @@
 							<% if $Entries %>
 						        <h3 class="mod-title">Latest News</h3>
 						        <ul class="unstyled">
-						        	<% loop $Entries('3') %>
+						        	<% loop $Entries('3','news') %>
 						        	<li><a href="$Link">$MenuTitle</a>
 						        		<% if $Date %><small>$Date.Format('M. j')</small><% end_if %>
 						        	</li>
