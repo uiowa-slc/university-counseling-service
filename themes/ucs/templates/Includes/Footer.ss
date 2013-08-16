@@ -4,7 +4,7 @@
 			<div class="col-3-8">
 				<a href="http://studentlife.uiowa.edu" class="hide-print"><img src="{$ThemeDir}/images/dosl-uiowa.png" alt="Division Of Student Life" style="margin-top: -20px;"></a><br>
 				<p>University Counseling Service supports mental well-being, nurtures student success, and contributes to a safe, welcoming, and multiculturally-aware campus community.</p>
-				<p>3233 Westlawn S., Iowa City, IA 52242<br>
+				<p>3223 Westlawn S., Iowa City, IA 52242<br>
 					Phone: 319 335-7294, Fax: 319 335-7298</p>
 			</div>
 			<div class="col-3-8 hide-print">
