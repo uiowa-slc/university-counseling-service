@@ -4,6 +4,7 @@ html/*
 .DS_Store
 assets/_combinedfiles/*
 vendor/*
+
 framework/
 
 dashboard/
@@ -33,3 +34,7 @@ timepickerfield/
 userforms/
 
 widgets/
+
+cms
+
+cms
