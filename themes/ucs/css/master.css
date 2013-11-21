@@ -2086,7 +2086,7 @@ body {
 @media screen and (min-width: 768px) {
   /* line 34, ../scss/layout/_site.scss */
   .main-bg {
-    background: black url(../../../../themes/ucs/images/hero-image.jpg) no-repeat center top;
+    background: black url(../../../themes/ucs/images/hero-image.jpg) no-repeat center top;
     border-bottom: 5px solid #ffce39;
     height: 665px;
     position: absolute;
@@ -2151,7 +2151,7 @@ body {
 ========================================================================== */
 /* line 83, ../scss/layout/_site.scss */
 .header {
-  background: white url(../../../../themes/ucs/images/nav_yellow.gif) repeat-x left bottom;
+  background: white url(../../../themes/ucs/images/nav_yellow.gif) repeat-x left bottom;
   position: relative;
 }
 
