@@ -2,7 +2,7 @@
 *.scssc
 html/*
 .DS_Store
-assets/_combinedfiles/*
+assets/*
 gridfieldrelationhandler/
 themes/simple/
 cms
