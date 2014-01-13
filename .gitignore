@@ -18,12 +18,7 @@ timepickerfield
 themes/simple
 spamprotection
 sortablegridfield
-vendor/autoload.php
-vendor/composer/autoload_classmap.php
-vendor/composer/autoload_namespaces.php
-vendor/composer/autoload_real.php
-vendor/composer/installed.json
-vendor/composer/installers
+vendor/composer
 widgets/
 division-project/
 googlesitemaps/
@@ -31,3 +26,9 @@ googlesitemaps/
 recaptcha/
 
 vendor/simplepie/simplepie/
+
+vendor/autoload.php
+
+vendor/composer/ClassLoader.php
+
+vendor/composer/ClassLoader.php
