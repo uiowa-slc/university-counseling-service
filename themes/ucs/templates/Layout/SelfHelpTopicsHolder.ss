@@ -5,6 +5,7 @@
     <section class="main-content">
 		<% if SelectedTag %>
 			<h1>Self-Help/$SelectedTag</h1>
+			<p><a href="self-help/">View all self-help topics</a></p>
 		<% else %>
 			<h1>$Title</h1>
 		<% end_if %>
