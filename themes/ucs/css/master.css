@@ -1190,6 +1190,40 @@ textarea,
   margin-bottom: 5px;
 }
 
+/* Sidebar Search */
+@media screen and (min-width: 768px) {
+  /* line 3, ../scss/imports/_search.scss */
+  aside #SearchForm_SearchForm {
+    margin: 1.25em 0 1.20em 15px;
+  }
+}
+/* line 10, ../scss/imports/_search.scss */
+aside #SearchForm_SearchForm input#SearchForm_SearchForm_Search {
+  width: 100%;
+}
+/* line 14, ../scss/imports/_search.scss */
+aside #SearchForm_SearchForm .action {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* line 25, ../scss/imports/_search.scss */
+aside #SearchForm_SearchForm label {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 /*@import "imports/_grid.scss";*/
 /* line 4, ../scss/imports/_grid-simple.scss */
 .colgroup:before, .colgroup:after {
