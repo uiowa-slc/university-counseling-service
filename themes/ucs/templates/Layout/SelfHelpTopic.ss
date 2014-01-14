@@ -6,6 +6,8 @@
 
 	    <article>
 			<h1 class="postTitle">$Title</h1>
+			<p><a href="self-help/">View all self-help articles</a></p>
+			
 			<% if TagsCollection %>
 				<p class="tags">
 					 <% _t('TAGS', 'Tags:') %> 
