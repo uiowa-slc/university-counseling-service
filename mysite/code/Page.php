@@ -30,6 +30,15 @@ class Page_Controller extends ContentController {
 
 	public function init() {
 		parent::init();
+		Requirements::block('division-project/css/master.css');
+		Requirements::block($this->owner->ThemeDir() . "/css/master.css");
+		Requirements::block('division-bar/css/_division-bar.css');
+
+
+	}
+
+	public function onAfterInit() {
+
 
 	}
 
