@@ -32,3 +32,5 @@ vendor/autoload.php
 vendor/composer/ClassLoader.php
 
 vendor/composer/ClassLoader.php
+
+mathspamprotection/
