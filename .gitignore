@@ -34,3 +34,4 @@ vendor/composer/ClassLoader.php
 vendor/composer/ClassLoader.php
 
 mathspamprotection/
+node_modules/
