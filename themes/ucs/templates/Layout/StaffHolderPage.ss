@@ -30,5 +30,8 @@
       	<% end_loop %>
       	
       </section>
+      <section class="sec-content">
+            <% include SideNav %>
+      </section>
 </section>
 <% include TopicsAndNews %>
