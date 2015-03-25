@@ -10,18 +10,7 @@
 
                   <ul class="staff-list">
                   <% loop $SortedStaffPages %>
-                        <li>
-                              <% if $Photo %>
-                              <a href="$Link" class="staff-link">
-                                    
-                                    <img src="$Photo.SetWidth(350).URL" alt="$FirstName $LastName" class="staff-img">
-                              </a>
-                              <% end_if %>
-                              <p class="staff-name">
-                                    <a href="$Link">$FirstName $LastName</a>
-                                    <% if $Position %><small class="staff-position">$Position</small><% end_if %>
-                              </p>
-                        </li>
+                        <% include StaffPageListItem %>
                   <% end_loop %>
                         <li class="filler"></li>
                         <li class="filler"></li>
