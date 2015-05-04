@@ -114,6 +114,13 @@ input{ margin-left: 0px; width: 100%; }
 .col-1-4{ width: 25%; }
 .col-1-2{ width: 50%; }
 }
+.hero{ border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: rgb(255, 206, 57); position: relative; padding-top: 2em; padding-right: 0px; padding-bottom: 2em; padding-left: 0px; }
+@media screen and (max-width: 768px) and (min-width: 480px){
+.hero{ background-image: url(../../../themes/ucs/images/hero-image-md.jpg); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(0, 0, 0); padding-top: 4em; padding-right: 0px; padding-bottom: 4em; padding-left: 0px; background-position: 50% 0%; background-repeat: no-repeat no-repeat; }
+}
+@media screen and (min-width: 768px){
+.hero{ background-image: url(../../../themes/ucs/images/hero-image.jpg); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(0, 0, 0); padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; height: 665px; background-position: 50% 0%; background-repeat: no-repeat no-repeat; }
+}
 .hero .container{ height: inherit; position: relative; }
 @media screen and (min-width: 768px){
 .hero .container{ text-align: right; }
@@ -122,11 +129,14 @@ input{ margin-left: 0px; width: 100%; }
 .hero .container::before{ content: ''; display: inline-block; height: 100%; vertical-align: middle; margin-right: -0.25em; }
 }
 @media screen and (min-width: 768px){
-.hero-text{ position: absolute; left: 1em; bottom: 4em; max-width: 60%; margin-right: 300px; text-align: left; }
+.hero-text{ position: absolute; left: 1em; bottom: 4em; max-width: 70%; margin-right: 300px; text-align: left; }
 }
 .blocktext{ margin-top: 0px; font-size: 1.6rem; font-weight: 600; line-height: 1.35; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; }
 @media screen and (min-width: 480px){
-.blocktext{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgba(0, 0, 0, 0.796875); color: rgb(255, 255, 255); display: inline; font-size: 2.33333rem; background-position: initial initial; background-repeat: initial initial; }
+.blocktext{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgba(0, 0, 0, 0.796875); color: rgb(255, 255, 255); display: inline; font-size: 2.4rem; background-position: initial initial; background-repeat: initial initial; }
+}
+@media screen and (min-width: 768px){
+.blocktext{ font-size: 2.8rem; }
 }
 .hero-text ul{ list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 10px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
 .hero-text li{ margin-top: 0px; margin-right: 10px; margin-bottom: 10px; margin-left: 0px; }
@@ -140,7 +150,7 @@ input{ margin-left: 0px; width: 100%; }
 }
 .hero-article{ border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); margin-top: 1.7em; padding-top: 1em; width: 100%; }
 @media screen and (max-width: 768px) and (min-width: 480px){
-.hero-article{ border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; float: left; margin-top: 0px; width: 49%; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial; }
+.hero-article{ border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; float: left; margin-top: 0px; width: 49%; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; background-position: initial initial; background-repeat: initial initial; }
 }
 @media screen and (min-width: 768px){
 .hero-article{ float: none; width: 100%; }
@@ -160,7 +170,7 @@ input{ margin-left: 0px; width: 100%; }
 @media screen and (min-width: 480px){
 .hero-link{ float: right; font-size: 0.8rem; }
 }
-.home-highlights{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(242, 242, 242); padding-top: 5em; padding-right: 0px; padding-bottom: 5em; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
+.home-highlights{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(242, 242, 242); background-position: initial initial; background-repeat: initial initial; }
 .module{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); -webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0px 1px 1px; box-shadow: rgba(0, 0, 0, 0.398438) 0px 1px 1px; border-top-left-radius: 2px 2px; border-top-right-radius: 2px 2px; border-bottom-right-radius: 2px 2px; border-bottom-left-radius: 2px 2px; margin-bottom: 1em; min-height: 305px; background-position: initial initial; background-repeat: initial initial; }
 @media screen and (min-width: 480px){
 .module{ float: left; margin-left: 2.7624309392265194%; margin-bottom: 0px; overflow-x: hidden; overflow-y: hidden; width: 31.491712707182323%; -webkit-transition-property: all; -webkit-transition-duration: 0.2s; -webkit-transition-timing-function: ease-out; -webkit-transition-delay: initial; }
