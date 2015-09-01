@@ -54,6 +54,6 @@ GD::set_default_quality(80);
 Object::add_extension('BlogEntry', 'BlogFieldExtension');
 
 if(Director::isLive()) {
-	Director::forceSSL(array('/^Security/','/^admin/'));
+	Director::forceSSL();
 }
 

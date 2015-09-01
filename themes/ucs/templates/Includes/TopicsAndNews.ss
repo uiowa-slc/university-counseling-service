@@ -21,7 +21,7 @@
 						        		<% if $Date %><small>$Date.Format('M. j')</small><% end_if %>
 						        	</li>
 						        	<% end_loop %>
-						        	<li><a href="$Link">View all News</a></li>
+						        	<li><hr /><a href="$Link">View all News &rarr;</a></li>
 
 						        </ul>
 							<% end_if %>
@@ -35,7 +35,7 @@
 						        	<% loop $Entries('3','event') %>
 						        	<li><a href="$Link">$MenuTitle</a></li>
 						        	<% end_loop %>
-						        	<li><a href="{$Link}tag/event">View all Events</a></li>
+						        	<li><hr /><a href="{$Link}tag/event">View all Events &rarr;</a></li>
 						        </ul>
 							<% end_if %>
 						<% end_with %>
