@@ -14,12 +14,12 @@
 
                         </ul>
                     </div>
-                    <div class="col-1-4 mod mod-news">
+                    <div class="col-1-2 mod mod-news">
                     	<% with Page(news) %>
 							<% if $BlogPosts %>
 						        <h3 class="mod-title">Latest news &amp; events</h3>
-						        <ul class="unstyled">
-						        	<% loop $BlogPosts.Limit(3) %>
+						        <ul class="grid-justify">
+						        	<% loop $BlogPosts.Limit(8) %>
 						        	<li><a href="$Link">$MenuTitle</a>
 						        		<% if $Date %><small>$Date.Format('M. j')</small><% end_if %>
 						        	</li>
