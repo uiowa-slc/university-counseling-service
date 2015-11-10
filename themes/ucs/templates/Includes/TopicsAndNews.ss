@@ -8,8 +8,9 @@
 	                        	<% loop $BlogPosts.Limit(8) %>
 	                        		<li><a href="$Link">$MenuTitle</a></li>
 	                            <% end_loop %>
+                                <li><hr /><a href="$Link">View all self-help articles &rarr;</a></li>
                             <% end_with %>
-                            <li><hr /><a href="$Link">View all self-help articles &rarr;</a></li>
+                            
 
                         </ul>
                     </div>
