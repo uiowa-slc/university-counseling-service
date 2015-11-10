@@ -393,4 +393,48 @@ aside .mod {
 .pagination .disabled a:hover {
 	background: #fff;
 }
+/* Sidebar Blog Feeds */
+.feed-nav {
+	margin: 0;
+	
+}
+.feed-nav li{
+	list-style-type: none;
+	border-bottom: 1px solid #ddd;  
+	padding: 0.5em;
+	margin: 0;
+	
+	&:hover {
+		background: #efefef;
+	}
+}
+
+.feed-nav .read-more{
+	display: block;
+	float: right;
+	margin-top: 1em;
+}
+
+.feed-nav .posted-on {
+	font-size: 0.8em;
+}
+
+.feed-nav a:hover {
+	text-decoration: none;
+}
+
+.feed-nav a .posted-on{
+	color: black;
+
+}
+
+.feed-nav .read-more:after{
+	clear: both;
+}
+
+.authorDate {
+	text-transform: uppercase;
+	color: #888;
+	font-size: 0.7em;
+}
 
