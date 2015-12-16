@@ -1,40 +1,6 @@
-@import "../../../division-bar/scss/_division-bar.scss";
-@import "../../../division-bar/scss/_md-bar.scss";
 /* Global
 -------------------------------------------*/
-@import "../../../division-project/scss/imports/_config.scss";
-@import "../../../division-project/scss/imports/_mixins.scss";
-@import "../../../division-project/scss/imports/_normalize.scss";
-@import "../../../division-project/scss/imports/_typography.scss";
-@import "../../../division-project/scss/imports/_global.scss";
+@import "../../../division-project/scss/master";
 
-/* Elements
--------------------------------------------*/
-
-@import "../../../division-project/scss/imports/_font.scss";
-@import "../../../division-project/scss/imports/_forms.scss";
-@import "../../../division-project/scss/imports/_buttons.scss";
-@import "../../../division-project/scss/imports/_search.scss";
-/*@import "imports/_grid.scss";*/
-@import "../../../division-project/scss/imports/_grid-simple.scss";
-@import "../../../division-project/scss/imports/_tables.scss";
-
-/* Vendor
--------------------------------------------*/ 
-/*@import "vendor/_flexslider.scss";*/
-
-
-/* Layout
--------------------------------------------*/ 
-@import "layout/_home.scss";
-@import "../../../division-project/scss/layout/_nav.scss";
-@import "../../../division-project/scss/layout/_footer.scss";
-
-
-/* Site specific styles
--------------------------------------------*/
-@import "layout/_site.scss";
-
-/* Print
--------------------------------------------*/
-@import "../../../division-project/scss/imports/_print.scss";
+/* Theme specific styles */
+@import "imports/_theme.scss"
