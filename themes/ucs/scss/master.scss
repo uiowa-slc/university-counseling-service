@@ -1,5 +1,6 @@
 @import "../../../division-bar/scss/_division-bar.scss";
 @import "../../../division-bar/scss/_md-bar.scss";
+
 /* Global
 -------------------------------------------*/
 @import "../../../division-project/scss/imports/_config.scss";
@@ -15,21 +16,24 @@
 @import "../../../division-project/scss/imports/_forms.scss";
 @import "../../../division-project/scss/imports/_buttons.scss";
 @import "../../../division-project/scss/imports/_search.scss";
+
 /*@import "imports/_grid.scss";*/
 @import "../../../division-project/scss/imports/_grid-simple.scss";
 @import "../../../division-project/scss/imports/_tables.scss";
 
 /* Vendor
--------------------------------------------*/ 
+-------------------------------------------*/
 /*@import "vendor/_flexslider.scss";*/
 
+@import "../../../division-project/bower_components/foundation/scss/foundation/components/grid";
+@import "../../../division-project/bower_components/foundation/scss/foundation/components/block-grid";
+@import "../../../division-project/bower_components/foundation/scss/foundation/components/visibility";
 
 /* Layout
--------------------------------------------*/ 
+-------------------------------------------*/
 @import "layout/_home.scss";
 @import "../../../division-project/scss/layout/_nav.scss";
 @import "../../../division-project/scss/layout/_footer.scss";
-
 
 /* Site specific styles
 -------------------------------------------*/
