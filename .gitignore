@@ -45,3 +45,11 @@ betternavigator/
 lumberjack/
 maintenance-mode/
 tagfield/
+
+vendor/johngrogg/ics-parser/
+
+reports/
+
+siteconfig/
+
+secureassets/
