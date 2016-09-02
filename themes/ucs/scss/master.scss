@@ -1,6 +1,9 @@
+@import "../../../division-bar/scss/_division-bar.scss";
+@import "../../../division-bar/scss/_md-bar.scss";
+
 /* Global
 -------------------------------------------*/
 @import "../../../division-project/scss/master";
 
 /* Theme specific styles */
-@import "imports/_theme.scss"
+@import "imports/_theme.scss";

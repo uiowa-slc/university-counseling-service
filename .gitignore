@@ -45,7 +45,8 @@ betternavigator/
 lumberjack/
 maintenance-mode/
 tagfield/
+vendor/
 reports/
 siteconfig/
 secureassets/
-vendor/
+
