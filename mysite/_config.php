@@ -56,4 +56,5 @@ Object::add_extension('BlogEntry', 'BlogFieldExtension');
 if(Director::isLive()) {
 	Director::forceSSL();
 }
+Authenticator::unregister('MemberAuthenticator');
 Authenticator::set_default_authenticator('SAMLAuthenticator');
