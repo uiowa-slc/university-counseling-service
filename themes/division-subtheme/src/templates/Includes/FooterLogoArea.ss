@@ -8,11 +8,7 @@
 					<strong>UCS hours are:</strong> 8:00 am – 5:00 pm Monday - Friday</p>
 			</div>
 			<div class="show-for-large columns large-5">
-				<div class="row">
-					<div class="large-5 columns">
 					<a href="{$BaseUrl}"><img class="footer-logo-area__logo" alt="University Counseling Services Logo" src="{$ThemeDir}/src/images/subfooter-logo.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></a>
-					</div>
-				</div>
 			</div>
 
 			<div class="columns large-3">
