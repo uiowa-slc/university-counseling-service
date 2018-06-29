@@ -1,0 +1,9 @@
+---
+Name: mysite
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
+SiteConfig:
+  extensions:
+    - UcsSiteConfigExtension
