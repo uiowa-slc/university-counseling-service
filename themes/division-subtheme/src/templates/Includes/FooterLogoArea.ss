@@ -8,7 +8,7 @@
 					$SiteConfig.Hours
 			</div>
 			<div class="show-for-large columns large-5">
-					<a href="{$BaseUrl}"><img class="footer-logo-area__logo" alt="University Counseling Services Logo" src="{$ThemeDir}/src/images/subfooter-logo.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></a>
+					<a href="{$BaseUrl}"><img class="footer-logo-area__logo" alt="University Counseling Services Logo" src="{$ThemeDir}/dist/images/subfooter-logo.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></a>
 			</div>
 
 			<div class="columns large-3">

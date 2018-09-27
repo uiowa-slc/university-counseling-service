@@ -1,9 +1,8 @@
 ---
-Name: mysite
-After:
-  - 'framework/*'
-  - 'cms/*'
+Name: myproject
 ---
-SiteConfig:
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: mysite
+Silverstripe\SiteConfig\SiteConfig:
   extensions:
     - UcsSiteConfigExtension
