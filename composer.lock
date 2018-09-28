@@ -7,6 +7,65 @@
     "content-hash": "a7f198cf8a9effb8f7913ed7b5ec149e",
     "packages": [
         {
+            "name": "colymba/gridfield-bulk-editing-tools",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/colymba/GridFieldBulkEditingTools.git",
+                "reference": "52d95ae82ceb842fa62c1d18d900c18285b1e198"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/52d95ae82ceb842fa62c1d18d900c18285b1e198",
+                "reference": "52d95ae82ceb842fa62c1d18d900c18285b1e198",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/asset-admin": "~1",
+                "silverstripe/framework": "~4"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                },
+                "expose": [
+                    "client/dist",
+                    "client/lang"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "Colymba\\BulkTools\\": "src/BulkTools/",
+                    "Colymba\\BulkManager\\": "src/BulkManager/",
+                    "Colymba\\BulkUpload\\": "src/BulkUploader/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "GitHub contributors",
+                    "homepage": "https://github.com/colymba/GridFieldBulkEditingTools/contributors"
+                },
+                {
+                    "name": "Thierry Francois",
+                    "homepage": "http://t-f.io"
+                }
+            ],
+            "description": "SilverStripe GridField component to upload images/files and edit records in bulk",
+            "homepage": "https://github.com/colymba/GridFieldBulkEditingTools",
+            "keywords": [
+                "Image upload",
+                "bulk upload",
+                "gridfield bulk upload",
+                "silverstripe"
+            ],
+            "time": "2018-08-16T12:46:38+00:00"
+        },
+        {
             "name": "composer/ca-bundle",
             "version": "1.1.2",
             "source": {
@@ -1061,15 +1120,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "ec129993b544010eb6696b9e98ec3a3c7c48fde5"
+                "reference": "4323a68ee732eb344b6678da7ad32953623d66e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/ec129993b544010eb6696b9e98ec3a3c7c48fde5",
-                "reference": "ec129993b544010eb6696b9e98ec3a3c7c48fde5",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/4323a68ee732eb344b6678da7ad32953623d66e6",
+                "reference": "4323a68ee732eb344b6678da7ad32953623d66e6",
                 "shasum": ""
             },
             "require": {
+                "colymba/gridfield-bulk-editing-tools": "dev-master",
                 "dnadesign/silverstripe-elemental": "*",
                 "edgarindustries/youtubefield": "*",
                 "gorriecoe/silverstripe-webfonts": "*",
@@ -1110,7 +1170,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/ss4.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2018-09-27T15:54:28+00:00"
+            "time": "2018-09-28T19:14:10+00:00"
         },
         {
             "name": "md/saml",
