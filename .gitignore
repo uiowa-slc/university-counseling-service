@@ -1,9 +1,11 @@
+.phpintel
 /silverstripe-cache/
 /.env
 /vendor/
 /themes/simple/
 /resources/
 /public/resources/
+/public/_resources/
 /public/assets/
 .sass-cache/*
 *.scssc
@@ -14,3 +16,4 @@ nocaptcha.yml
 smtp.yml
 /node_modules/
 /npm-debug.log
+/cache
