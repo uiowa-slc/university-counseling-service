@@ -37,8 +37,7 @@
         ],
         "expose": [
             "themes/division-subtheme/dist",
-            "themes/division-subtheme/css",
-            "mysite/cms_icons"
+            "themes/division-subtheme/css"
         ]
     },
     "repositories": [
