@@ -1,5 +1,7 @@
 <?php
 use SilverStripe\CMS\Controllers\ContentController;
+use Psr\SimpleCache\CacheInterface;
+use SilverStripe\Core\Injector\Injector;
 class PageController extends ContentController {
 
 	/**
@@ -22,7 +24,9 @@ class PageController extends ContentController {
 
 	protected function init() {
 		parent::init();
-
+		$cache = Injector::inst()->get(CacheInterface::class . '.configcache');
+		//$config = Config::inst()->get('Psr\SimpleCache\CacheInterface', 'property');
+		print_r($cache);
 	}
 
 }
