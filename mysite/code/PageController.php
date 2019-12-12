@@ -24,9 +24,9 @@ class PageController extends ContentController {
 
 	protected function init() {
 		parent::init();
-		$cache = Injector::inst()->get(CacheInterface::class . '.configcache');
-		//$config = Config::inst()->get('Psr\SimpleCache\CacheInterface', 'property');
-		print_r($cache);
+		// $cache = Injector::inst()->get(CacheInterface::class . '.configcache');
+		// //$config = Config::inst()->get('Psr\SimpleCache\CacheInterface', 'property');
+		// print_r($cache);
 	}
 
 }
