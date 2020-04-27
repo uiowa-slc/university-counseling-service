@@ -509,21 +509,22 @@
         },
         {
             "name": "embed/embed",
-            "version": "v3.4.2",
+            "version": "v3.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oscarotero/Embed.git",
-                "reference": "dc1dc3c126f8a78acdae06b83f591c0728ea131d"
+                "reference": "e623b6b486d8b1f3e33ff341f9affb09ecf0407e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/Embed/zipball/dc1dc3c126f8a78acdae06b83f591c0728ea131d",
-                "reference": "dc1dc3c126f8a78acdae06b83f591c0728ea131d",
+                "url": "https://api.github.com/repos/oscarotero/Embed/zipball/e623b6b486d8b1f3e33ff341f9affb09ecf0407e",
+                "reference": "e623b6b486d8b1f3e33ff341f9affb09ecf0407e",
                 "shasum": ""
             },
             "require": {
                 "composer/ca-bundle": "^1.0",
                 "ext-curl": "*",
+                "ext-dom": "*",
                 "ext-mbstring": "*",
                 "php": "^5.6|^7.0"
             },
@@ -558,7 +559,7 @@
                 "opengraph",
                 "twitter cards"
             ],
-            "time": "2019-09-16T19:34:02+00:00"
+            "time": "2020-04-26T11:45:04+00:00"
         },
         {
             "name": "gorriecoe/silverstripe-webfonts",
@@ -1309,12 +1310,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "d51464c87b14b19d288199adfc2372a5084ddc0f"
+                "reference": "13ffe8a800486d8bd212365b4ef060cf2c85295b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/d51464c87b14b19d288199adfc2372a5084ddc0f",
-                "reference": "d51464c87b14b19d288199adfc2372a5084ddc0f",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/13ffe8a800486d8bd212365b4ef060cf2c85295b",
+                "reference": "13ffe8a800486d8bd212365b4ef060cf2c85295b",
                 "shasum": ""
             },
             "require": {
@@ -1361,7 +1362,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/2",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2020-04-22T21:42:31+00:00"
+            "time": "2020-04-27T20:44:16+00:00"
         },
         {
             "name": "md/saml",
@@ -4969,23 +4970,20 @@
         },
         {
             "name": "phpdocumentor/reflection-common",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionCommon.git",
-                "reference": "63a995caa1ca9e5590304cd845c15ad6d482a62a"
+                "reference": "6568f4687e5b41b054365f9ae03fcb1ed5f2069b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/63a995caa1ca9e5590304cd845c15ad6d482a62a",
-                "reference": "63a995caa1ca9e5590304cd845c15ad6d482a62a",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/6568f4687e5b41b054365f9ae03fcb1ed5f2069b",
+                "reference": "6568f4687e5b41b054365f9ae03fcb1ed5f2069b",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~6"
             },
             "type": "library",
             "extra": {
@@ -5017,7 +5015,7 @@
                 "reflection",
                 "static analysis"
             ],
-            "time": "2018-08-07T13:53:10+00:00"
+            "time": "2020-04-27T09:25:28+00:00"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
