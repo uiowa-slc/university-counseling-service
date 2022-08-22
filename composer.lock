@@ -1865,12 +1865,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "364a12eb5cd26ff2527c5808b36811221075e4a7"
+                "reference": "04c25573dca7cbb329e0011277970aea1574d53c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/364a12eb5cd26ff2527c5808b36811221075e4a7",
-                "reference": "364a12eb5cd26ff2527c5808b36811221075e4a7",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/04c25573dca7cbb329e0011277970aea1574d53c",
+                "reference": "04c25573dca7cbb329e0011277970aea1574d53c",
                 "shasum": ""
             },
             "require": {
@@ -1920,7 +1920,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/3",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2022-08-22T19:29:49+00:00"
+            "time": "2022-08-22T19:45:56+00:00"
         },
         {
             "name": "md/saml",
