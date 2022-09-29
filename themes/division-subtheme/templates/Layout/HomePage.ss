@@ -29,7 +29,7 @@ $Header
                 <% if $SubHeading %>
                     <h2 class="hero__header">$SubHeading</h2>
                 <% end_if %>
-                <p style="color: white; margin: 30px 0;">Serving undergraduate students, graduate students, professional students and postdocs</p>
+                <p style="color: white; margin: 30px 0;"><span style="background: black; display: inline-block; padding: 3px" >Serving undergraduate students, graduate students, professional students, and postdocs</span></p>
                 <% if $ButtonUrlOne %>
                     <a href="$ButtonUrlOne" class="button">$ButtonTextOne <i class="fas fa-arrow-right"></i></a>
                 <% end_if %>
