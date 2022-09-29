@@ -1,6 +1,24 @@
 
 $Header
 
+<style>
+
+.hero__content p{
+    margin: 30px 0;
+}
+
+@media screen and (min-width: 768px){
+    .hero__content p{
+        color: white; 
+        margin: 30px 0;
+    }
+    .hero__content p span{
+        background: rgba(0, 0, 0, 0.4);
+        display: inline-block; 
+        padding: 3px
+    }
+}
+</style>
 
 <div class="hero <% if $SubHeading || $ButtonTextOne %>hero--content<% end_if %> hero--$Position">
     <div class="hero__imgwrap hero__imgwrap--$Size hero__imgwrap--$Background"
@@ -29,7 +47,7 @@ $Header
                 <% if $SubHeading %>
                     <h2 class="hero__header">$SubHeading</h2>
                 <% end_if %>
-                <p style="color: white; margin: 30px 0;"><span style="background: black; display: inline-block; padding: 3px" >Serving undergraduate students, graduate students, professional students, and postdocs</span></p>
+                <p><span style="" >Serving undergraduate students, graduate students, professional students, and postdocs</span></p>
                 <% if $ButtonUrlOne %>
                     <a href="$ButtonUrlOne" class="button">$ButtonTextOne <i class="fas fa-arrow-right"></i></a>
                 <% end_if %>
